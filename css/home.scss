@@ -693,7 +693,7 @@ footer{
         }
         span{
             display: block;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             font-size: 10px;
         }
     }
@@ -841,7 +841,7 @@ footer{
     }
    
 }
-@media screen and (max-width:767px) and (min-width:576px){
+@media screen and (max-width:767px) and (min-width:577px){
     .left-oblation {
         width: 100%;
         margin: 20px 0;
@@ -877,7 +877,7 @@ footer{
         margin-bottom: 35px;
     }
 }
-@media screen and (max-width:576px){
+@media screen and (max-width:577px){
     .lastButton{
         margin-top: 25px;
     }
