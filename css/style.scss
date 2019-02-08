@@ -1,0 +1,58 @@
+@import './home.scss'; 
+@import './about.scss'; 
+@import './stories.scss'; 
+@import './gallery.scss'; 
+@import './forum.scss'; 
+@import './job.scss'; 
+@import './work-more.scss'; 
+@import './stories-more.scss'; 
+@import './video.scss'; 
+@import './events.scss'; 
+@import './events-more.scss'; 
+@import './donate.scss'; 
+@import './termsconditions.scss'; 
+@import './password-reset.scss'; 
+@import './show-comments.scss'; 
+// @import './variables.scss'; 
+
+$bgBody: #f3eeeb;
+
+@font-face {
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+    font-family: slack;
+}
+@font-face {
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-family: slack-bold;
+}
+
+body{
+    font-family: slack;
+    background-color:$bgBody;
+}
+body.afterForm {
+    overflow: hidden !important;
+}
+.afterbg {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 26;
+}
+.data-animate{
+    opacity: 0;
+}
+.childrenAnimate{
+    position: relative;
+    top: -40px;
+    transition: .4s;
+    opacity: 0;
+}
+@media screen and (max-width:576px){
+
+    .gallMore p{
+        font-size: 14px;
+    }
+}

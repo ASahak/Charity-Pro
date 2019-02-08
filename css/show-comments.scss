@@ -1,0 +1,121 @@
+@import './mixins';
+@import './extends';
+
+@import './variables';
+.commentsWrap{
+    >h4{
+        text-align: center;
+        padding: 15px;
+        background:$globalColorRed;
+        color: #fff;
+        font-size: 30px;
+    }
+    .subCommentsUser {
+        display: flex;
+        align-items: start;
+        img{
+            margin-right: 15px;
+        }
+        .bottomLikes {
+            display: flex;
+            align-items: center;
+            .likePut{
+                color: #26a920;
+                cursor: pointer;
+            }
+            .dislikePut{
+                cursor: pointer;
+                color: $globalColorRed
+            }
+            p:last-child{
+                font-size: 14px;
+            }
+            p{
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    .writeUser{
+        display:flex;
+        padding: 10px;
+        box-shadow: 0px 6px 12px -4px #ccc;
+        
+        .userComment{
+            width: calc(100% - 200px);
+            >p{
+                min-height: 80px;
+                box-shadow: 0px 6px 5px -5px #ccc;
+            }
+            .addSubCommentForm{
+                .addSubComment{
+                    @extend %extend-add-button;
+                    margin-top: 10px;
+                    margin-left: auto;
+                    display: block;
+                }
+            }
+        }
+        .userSection{
+            width: 200px;
+            >span{
+                font-size: 13px;
+            }
+            p{
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:576px){
+    .userSection{
+        width: 160px !important;
+        
+    }
+    .userComment{
+        width: calc(100% - 160px)!important;
+        p{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .commentsWrap{
+        >h4{
+            font-size: 20px;
+        }
+         .writeUser {
+            display: flex;
+            padding: 10px;
+            box-shadow: 0px 6px 12px -4px #ccc;
+            flex-direction: column;
+            .userSection{
+                width: 100%;
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                >span{
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+            .userComment {
+                width: 100%;
+                font-size: 13px;
+                .subCommentsUser {
+                    .bottomLikes {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+@import './mixins';
+@import './extends';
+
+@import './variables';;
+
+.wayPath{
+    padding: 15px 0;
+    border-top: 1px solid $globalColorGrey;
+    border-bottom: 1px solid $globalColorGrey;
+    margin: 15px 0 35px;
+    p{
+        a{
+            color:$globalColorGrey;
+            position: relative;
+            text-decoration: none;
+            &:after{
+                content: "";
+                position: absolute;
+                right: -15px;
+                top: 0;
+                width: 1px;
+                background-color: #000;
+                height: 20px;
+                transform: rotate(15deg)
+            } 
+        }
+        span{   
+            margin-left: 25px;
+            display: inline-block;
+        }
+    }
+}
+
+.stHeader{
+    font-size: 50px;
+
+}
+.commonStoriesBlock{
+    margin-top: 45px;
+    .dateSee{
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        p{
+            margin-bottom: 0;
+            font-family: sans-serif;
+            color: #aba4a0;
+            margin-right: 15px;
+            font-size:14px;
+            span{
+                font-size:14px;
+                font-weight: 600;
+            }
+            a{
+                color: #aba4a0;
+
+            }
+        }
+    }
+    .storiesItemName{
+        a{
+            text-decoration: none;
+            color: $globalColorRed;
+        }
+        margin: 25px 0;
+    }
+    .descriptionStories{
+        font-family: sans-serif;
+        font-size: 16px;
+        color: $globalColorGrey;
+    }
+    .hideAndShowComment{
+        display: none;
+    }
+}
+.pageinationStories{
+    margin-top: 45px;
+    text-align: center;
+    position: relative;
+    .activePage{
+        color: $globalColorRed;
+    }
+    .disabledPage {
+        span{
+            color: #b78484;
+            cursor: default;
+        }
+    }
+    a{
+        display: inline-block;
+        width: 25px;
+        text-align: center;
+        color: $globalColorGrey;
+        text-decoration: none;
+    }
+    span{
+        color: $globalColorRed;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width:576px){
+    .commonStoriesBlock {
+        > div{
+            flex-wrap: wrap;
+        }
+    }
+}

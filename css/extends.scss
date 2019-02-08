@@ -1,0 +1,145 @@
+@import './variables';
+
+%extend-span{
+    padding: 10px;
+    box-shadow: -2px 0px 1px -2px $globalColorWhite;
+    margin-left: 5px;
+    font-weight: 600;
+}
+%extend-button-red{
+    padding: 12px 12px 13px 15px;
+    line-height: 40px;
+    color: $globalColorWhite;
+    background-color: $globalColorRed;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+%extend-after-triangle{
+    position: absolute;
+    display: inline-block;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #eee;
+    border-bottom: 6px solid transparent;
+    top: 45px;
+    content: "";
+}
+%extend-before-triangle{
+    position: absolute;
+    display: inline-block;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #eee;
+    border-bottom: 7px solid transparent;
+    border-right-color: #dee2e6;
+    
+    top: 45px;
+    content: "";
+}
+%extend-add-button{
+    background: $globalColorRed;
+    color: $globalColorWhite;
+    border: none;
+    padding: 5px 25px;
+    cursor: pointer;
+    transition: .4s;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    &:hover{
+        background-color: #000;
+    }
+}
+%extend-button-search{
+    background:$globalColorRed;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 5px;
+    
+    margin-left: auto;
+    margin-top: 10px;
+    width:100%;
+    &:hover{
+        background-color: $globalColorWhite;
+        color: $globalColorRed;
+        border: 1px solid $globalColorRed;
+    }
+}
+%extend-titleH4{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom:-8px;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        background-color: $globalColorRed;
+    }
+}
+%extend-form-input{
+    background: #f4efec;
+    border: none;
+    margin-bottom: 11px;
+    font-size: 14px;
+    font-weight: normal;
+    color: $globalColorGrey;
+    padding:10px 14px;
+    width: 100% !important;
+    box-shadow: none;
+    @include transition(auto);
+    border: 1px solid #fafafa;
+    outline: none;
+    &:focus{
+        border-color: rgba(82, 168, 236, 0.8);
+    }
+}
+%extend-input-register-login{
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background: $globalColorRed;
+    color: $globalColorWhite;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+    padding: 7px 19px;
+    text-shadow: none;
+    box-shadow: none;
+    text-align: center;
+    text-transform: uppercase;
+    @include transition(pointer);
+    margin: 8px 0;
+    &:hover{
+        background-color: #212121
+    }
+}
+%extend-input-select{
+    width: 100%;
+    display: block;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 6px;
+    background-color: $globalColorWhite;
+    color: #757575;
+}
+@media screen and (max-width:991px) and (min-width:767px){
+    %extend-button-red{
+        padding: 7px 5px 7px 5px;
+        line-height: 30px;
+        color: #fff;
+        background-color: #c82f2f;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+}

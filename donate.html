@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CarityPro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="css/initTelInput.css">   
+</head>
+<body>
+    <header>
+        <div class="d-block d-md-none homeTop">
+            <span class="lnr lnr-menu clickMobileMenu"></span>
+            Home
+        </div>
+        <div class="container">
+            <div class="top-panel">
+                <div class="loginWrap text-right">
+                    <span class="lnr lnr-user loginIcon" ></span>
+                    <div class="loginForm">
+                        <h3 class="headerForm text-left">Login Form:</h3>
+                        <form name="" action="" method="" id="loginForma" class="d-flex align-items-start flex-column">
+                            <input type="text" name="username" placeholder="Username">
+                            <input type="password" name="password" placeholder="Password">
+                            <a href="password-reset.html">Forgot your username?</a>
+                            <a href="password-reset.html">Forgot your password?</a>
+                            <button type="submit" class="loginButton">Log in</button>
+                            <a href="javascript:void(0)" class="registerFunc">Or Register</a> 
+                            
+                        </form>   
+                    </div>
+                    <div class="registerForm">
+                        <h3 class="headerForm text-left">Register Form:</h3>
+                        <form name="" action="" method="" id="registerForma" class="d-flex align-items-start flex-column">
+                            <input type="text" name="username" placeholder="Username">
+                            <input type="email" name="email" placeholder="email">
+                            <div class="genderBlock">
+                                <span>Gender</span>
+                                <p class="mb-0">
+                                    <label for="male">
+                                        <input type="radio" class="notSelect" id="male" name="gender"> :Male
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" class="notSelect" id="female" name="gender"> :Female
+                                    </label>
+                                </p>  
+                            </div> 
+                            <input type="password" name="password" placeholder="password">  
+                            <input type="password" name="confirm-password" placeholder="confirm password">  
+                            <label for="agree" class="agreeClass">
+                                <input type="checkbox" id="agree" class="notSelect" name="agree">
+                                <a href="termsconditions.html">Համաձայն եմ գաղտնիության քաղաքականությանը</a>
+                            </label>
+                            <button type="submit" class="loginButton logined">Register</button>
+                        </form>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="row">          
+                    <div class="col-12 d-flex flex-column flex-sm-row justify-content-between align-items-center headerFixed">
+                        <a href="index.html" class="d-block logo-content">
+                            <p data-second="Pro" class="mb-0">Charity </p>
+                            <span>charity organization</span>
+                        </a>
+                        <ul class="navBar" type="none">
+                            <li ><a href="index.html">Home</a></li>
+                            <li><a href="forum.html">Forum</a></li>
+                            <li><a href="job.html">Work</a></li>
+                            <li><a href="stories.html">Stories</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li ><a href="about.html">About Us</a></li>
+                        </ul>
+                        <div class="donateBlock">
+                            <a href="javascript:void(0)" class="lastButton logined">Donate <img src="./img/donation.svg"></a>
+                            <div class="addDonateWrap">
+                                <form action="" class="addWorkForm">
+                                    <input type="text" placeholder="Նվիրաբերություն" name="donate" >
+                                    <textarea rows="4" placeholder="Նկարագրություն" name="subject"></textarea>
+                                    <select class="filterCitys">
+                                        <option value="">Տեխնիկա</option>
+                                        <option value="1">Հագուստ</option>
+                                        <option value="2">Ամեն ինչ տան համար</option>
+                                        <option value="3">Գործիքներ և նյութեր</option>
+                                        <option value="4">Այլ</option>
+                                    </select>
+                                    <div class="telBlock d-flex align-items-center form-control">
+                                        <input type="tel" class="filter_input new-don input-phone job-phone2">
+                                    </div>
+                                    <span  class="valid-msg-job2 d-none">✓ Հեռախոսահամարը ճիշտ է լրացված</span>
+                                    <span  class="error-msg-job2 d-none">✗ Հեռախոսահամարը սխալ է լրացված</span>
+                                    <label class="file-label">
+                                        <input class="file-input" name="url" type="file">
+                                        <span class="file-cta">
+                                            <span class="file-icon">
+                                                <span class="lnr lnr-upload"></span>
+                                            </span>
+                                            <span class="file-label">
+                                            choses Image...
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <input type="submit" class="addWork" value="Ավելացնել">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wayPath gallMore">
+                        <p class="mb-0 ">
+                            <a href="index.html">home</a>
+                            <span>donate</span>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="workSection">
+                        <h5>Կատեգորիաներ</h5>
+                        <div class="categDonate">
+                            <a href="#">Տեխնիկա</a>
+                            <a href="#">Հագուստ</a>
+                            <a href="#">Ամեն ինչ տան համար</a>
+                            <a href="#">Գործիքներ և նյութեր</a>
+                            <a href="#">Այլ</a>
+                        </div>
+                        <button class="addWorkButton">Նվիրաբերիր</button>
+                        <div class="addWorkWrap">
+                            <form action="" class="addWorkForm">
+                                <input type="text" placeholder="Նվիրաբերություն" name="donate" >
+                                <textarea rows="4" placeholder="Նկարագրություն" name="subject"></textarea>
+                                <select class="filterCitys">
+                                    <option value="">Տեխնիկա</option>
+                                    <option value="1">Հագուստ</option>
+                                    <option value="2">Ամեն ինչ տան համար</option>
+                                    <option value="3">Գործիքներ և նյութեր</option>
+                                    <option value="4">Այլ</option>
+                                </select>
+                                <div class="telBlock d-flex align-items-center form-control">
+                                    <input type="tel" class="filter_input new-don input-phone job-phone">
+                                
+                                </div>
+                                <span  class="valid-msg-job d-none">✓ Հեռախոսահամարը ճիշտ է լրացված</span>
+                                <span  class="error-msg-job d-none">✗ Հեռախոսահամարը սխալ է լրացված</span>
+                                <label class="file-label">
+                                    <input class="file-input" name="url" type="file">
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <span class="lnr lnr-upload"></span>
+                                        </span>
+                                        <span class="file-label">
+                                        choses Image...
+                                        </span>
+                                    </span>
+                                </label>
+                                <input type="submit" class="addWork" value="Ավելացնել">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="d-block">
+                        <a href="donate.html" class="comeBack"> <span class="lnr lnr-arrow-left"></span> Back</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 donateBadge">
+                            <a href="javascript:void(0)" class="d-block moreDonate">
+                                <img src="./img/donate.jpg" class="img-fluid" alt="">
+                                <div class="desc_href">
+                                    <h4>Մանկական կոշիկներ</h4>
+                                    <p>Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար: Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար:</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 donateBadge">
+                            <a href="javascript:void(0)" class="d-block moreDonate">
+                                <img src="./img/donate.jpg" class="img-fluid" alt="">
+                                <div class="desc_href">
+                                    <h4>Մանկական կոշիկներ</h4>
+                                    <p>Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար: Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար:</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 donateBadge">
+                            <a href="javascript:void(0)" class="d-block moreDonate">
+                                <img src="./img/donate.jpg" class="img-fluid" alt="">
+                                <div class="desc_href">
+                                    <h4>Մանկական կոշիկներ</h4>
+                                    <p>Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար: Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար:</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 donateBadge">
+                            <a href="javascript:void(0)" class="d-block moreDonate">
+                                <img src="./img/donate.jpg" class="img-fluid" alt="">
+                                <div class="desc_href">
+                                    <h4>Մանկական կոշիկներ</h4>
+                                    <p>Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար: Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար:</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 donateBadge">
+                            <a href="javascript:void(0)" class="d-block moreDonate">
+                                <img src="./img/donate.jpg" class="img-fluid" alt="">
+                                <div class="desc_href">
+                                    <h4>Մանկական կոշիկներ</h4>
+                                    <p>Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար: Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար:</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </main>
+    <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="footerLogo">
+                            <p data-second="Pro" class="mb-0">Charity </p>
+                            <span>© 2017 - <blockquote class="yearChange"></blockquote> | <a href="termsconditions.html">PRIVACY POLICY</a></span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-5">
+                        <div class="whoWeAre">
+                            <h2 class="footHeaders">Who we are</h2>
+                            <ul type="none">
+                                <li><a href="about.html#history-about">History</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Coopocate partners</a></li>
+                            </ul>  
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="whatWeDo">
+                            <h2 class="footHeaders">What we do</h2>
+                            <ul type="none">
+                                <li><a href="#">Our approach</a></li>
+                                <li><a href="#">Our mission</a></li>
+                                <li><a href="#">Valantering</a></li>
+                            </ul>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+    
+        <span class="lnr lnr-chevron-up jumpTo"></span>
+
+        <div class="modalJobView">
+            <div class="commonInfoDonate">
+                <div class="imgBlockModalDonate d-flex flex-column flex-md-row align-items-start">
+                    <div class=" swiperSliderDoante">
+                        <div class="swiper-container charitySlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="large_slide_item">
+                                        <img class="img-fluid" src="./img/donate.jpg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="large_slide_item">
+                                        <img class="img-fluid" src="./img/donate.jpg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="large_slide_item">
+                                        <img class="img-fluid" src="./img/donate.jpg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="large_slide_item">
+                                        <img class="img-fluid" src="./img/donate.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next next_large swiper-button-white"></div>
+                            <div class="swiper-button-prev prev_large swiper-button-white"></div>
+                        </div>
+                        <div class="swiper-container charitySliderThumb">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="thumb_slide_item">
+                                        <img class="swipe-slide-to img-fluid" src="./img/donate.jpg" data-slide-to="0">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb_slide_item">
+                                        <img class="swipe-slide-to img-fluid" src="./img/donate.jpg" data-slide-to="1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb_slide_item">
+                                        <img class="swipe-slide-to img-fluid" src="./img/donate.jpg" data-slide-to="2">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="thumb_slide_item">
+                                        <img class="swipe-slide-to img-fluid" src="./img/donate.jpg" data-slide-to="3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="descriptionModalDonate">
+                        <h5>Մանկական կոշիկներ</h5>
+                        <p>
+                                Կնվիրեմ մանկական կոշիկներ: Մինչև 1 տարեկան երեխաների համար:
+                        </p>   
+                    </div>
+                </div>
+                <div class="contactInfoDonate">
+                    <h5>Contact Us</h5>
+                    <ul type="none">
+                        <li>
+                            <span class="lnr lnr-phone-handset"></span>
+                            <p class="mb-0">
+                                <a href="tel:37477291892">077-29-18-92</a>
+                            </p>   
+                        </li>
+                        <li>
+                            <span class="lnr lnr-envelope"></span>
+                            <a href="emailto:info@tanger.am">info@tanger.am</a>
+                        </li>  
+                        <li>
+                            <span class="lnr lnr-user"></span>
+                            Tanger
+                        </li>
+                    </ul>
+                    <button class="closeModalDonate">Close</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/donate.js"></script>
+        <script src="js/initTelInput.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/masked-input.js"></script>
+        <script src="js/job.js"></script>
+
+    </body>
+    </html>

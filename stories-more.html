@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CarityPro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="d-block d-md-none homeTop">
+            <span class="lnr lnr-menu clickMobileMenu"></span>
+            Home
+        </div>
+        <div class="container">
+            <div class="top-panel">
+                <div class="loginWrap text-right">
+                    <span class="lnr lnr-user loginIcon" ></span>
+                    <div class="loginForm">
+                        <h3 class="headerForm text-left">Login Form:</h3>
+                        <form name="" action="" method="" id="loginForma" class="d-flex align-items-start flex-column">
+                            <input type="text" name="username" placeholder="Username">
+                            <input type="password" name="password" placeholder="Password">
+                            <a href="password-reset.html">Forgot your username?</a>
+                            <a href="password-reset.html">Forgot your password?</a>
+                            <button type="submit" class="loginButton">Log in</button>
+                            <a href="javascript:void(0)" class="registerFunc">Or Register</a> 
+                        </form>   
+                    </div>
+                    <div class="registerForm">
+                        <h3 class="headerForm text-left">Register Form:</h3>
+                        <form name="" action="" method="" id="registerForma" class="d-flex align-items-start flex-column">
+                            <input type="text" name="username" placeholder="Username">
+                            <input type="email" name="email" placeholder="email">
+                            <div class="genderBlock">
+                                <span>Gender</span>
+                                <p class="mb-0">
+                                    <label for="male">
+                                        <input type="radio" class="notSelect" id="male" name="gender"> :Male
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" class="notSelect" id="female" name="gender"> :Female
+                                    </label>
+                                </p>  
+                            </div> 
+                            <input type="password" name="password" placeholder="password">  
+                            <input type="password" name="confirm-password" placeholder="confirm password">  
+                            <label for="agree" class="agreeClass">
+                                <input type="checkbox" id="agree" class="notSelect" name="agree">
+                                <a href="termsconditions.html">Համաձայն եմ գաղտնիության քաղաքականությանը</a>
+                            </label>
+                            <button type="submit" class="loginButton logined">Register</button>
+                        </form>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="row">          
+                    <div class="col-12 d-flex flex-column flex-sm-row justify-content-between align-items-center headerFixed">
+                        <a href="index.html" class="d-block logo-content">
+                            <p data-second="Pro" class="mb-0">Charity </p>
+                            <span>charity organization</span>
+                        </a>
+                        <ul class="navBar" type="none">
+                            <li ><a href="index.html">Home</a></li>
+                            <li><a href="forum.html">Forum</a></li>
+                            <li><a href="job.html">Work</a></li>
+                            <li  class="active-link"><a href="javascript:void(0)">Stories</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li ><a href="about.html">About Us</a></li>
+                        </ul>
+                        <div class="donateBlock">
+                            <a href="javascript:void(0)" class="lastButton logined">Donate <img src="./img/donation.svg"></a>
+                            <div class="addDonateWrap">
+                                <form action="" class="addWorkForm">
+                                    <input type="text" placeholder="Նվիրաբերություն" name="donate" >
+                                    <textarea rows="4" placeholder="Նկարագրություն" name="subject"></textarea>
+                                    <select class="filterCitys">
+                                        <option value="">Տեխնիկա</option>
+                                        <option value="1">Հագուստ</option>
+                                        <option value="2">Ամեն ինչ տան համար</option>
+                                        <option value="3">Գործիքներ և նյութեր</option>
+                                        <option value="4">Այլ</option>
+                                    </select>
+                                    <div class="telBlock d-flex align-items-center form-control">
+                                        <input type="tel" class="filter_input new-don input-phone job-phone">
+                                    </div>
+                                    <span id="valid-msg-job" class="d-none">✓ Հեռախոսահամարը ճիշտ է լրացված</span>
+                                    <span id="error-msg-job" class="d-none">✗ Հեռախոսահամարը սխալ է լրացված</span>
+                                    <label class="file-label">
+                                        <input class="file-input" name="url" type="file">
+                                        <span class="file-cta">
+                                            <span class="file-icon">
+                                                <span class="lnr lnr-upload"></span>
+                                            </span>
+                                            <span class="file-label">
+                                            choses Image...
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <input type="submit" class="addWork" value="Ավելացնել">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-block">
+                    <a href="stories.html" class="comeBack"> <span class="lnr lnr-arrow-left"></span> Back</a>
+                </div>
+                <div class="col-12">
+                    <div class="bgWhiteCharity">    
+                        <div class="row">
+                            <div class="col-12 col-md-5 mb-4">
+                                <div class="swiper-container charitySlider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="large_slide_item">
+                                                <img class="img-fluid" src="./img/charity1.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="large_slide_item">
+                                                <img class="img-fluid" src="./img/charity2.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="large_slide_item">
+                                                <img class="img-fluid" src="./img/charity3.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="large_slide_item">
+                                                <img class="img-fluid" src="./img/charity4.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next next_large swiper-button-white"></div>
+                                    <div class="swiper-button-prev prev_large swiper-button-white"></div>
+                                </div>
+                                <div class="swiper-container charitySliderThumb">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="thumb_slide_item">
+                                                <img class="swipe-slide-to img-fluid" src="./img/charity1.jpg" data-slide-to="0">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="thumb_slide_item">
+                                                <img class="swipe-slide-to img-fluid" src="./img/charity2.jpg" data-slide-to="1">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="thumb_slide_item">
+                                                <img class="swipe-slide-to img-fluid" src="./img/charity3.jpg" data-slide-to="2">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="thumb_slide_item">
+                                                <img class="swipe-slide-to img-fluid" src="./img/charity4.jpg" data-slide-to="3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7 position-relative mb-4">
+                                <div class="charityDescripition pb-5">
+                                    <h5>Օգնություն փոքրիկ Աննային</h5>
+                                    <span class="d-block mt-3 mb-3">
+                                        <img src="./img/logo.png" alt="" class=" mr-2" style="max-width:35px">
+                                        Charity Pro
+                                    </span>
+                                    <p>
+                                        <a href="https://www.facebook.com/anul.tarverdyan.9" target="_blank">https://www.facebook.com/anul.tarverdyan.9</a>
+                                        ֆեյսբուքյան օգտատերի էջից տեղեկացանք փոքրիկ Աննայի մասին։ Երեխան ունի շատ լուրջ խնդիր և Արաբկիր բժշկական կենտրոնի մասնագետները հորդորում են երեխային անհապաղ ուղարկել Գերմանիա, որտեղ հնարավոր է համապատասխան բուժօգնություն տրամադրել: 
+                                        Նկարում Աննան է: Ծնվել է 2017 թվականի հոկտեմբերի 3-ին: Ծնվելուց առողջական ոչ մի խնդիր չի ունեցել: 
+                                        Մայրն ասում է, որ մեկ ամսականում ինչ-որ անհասկանալի հիվանդություն է նկատվել երեխայի մոտ, որը մինչ օրս բժիշկները չեն կարողանում պարզել: Մարտի 14-ից փոքրիկը գտնվում է Արաբկիր բժշկական կենտրոնում: Երեխան ունենում է շատ ուժգին ցնցումներ, թթվածնային քաղց:
+                                        Փոքրիկին օգնելու համար փոխանցումներ կարող եք կատարել նշված հաշվեհամարներով։ Կամ հնարավորության դեպքում ակտիվ տարածեք նյութը։ Գուցե, գտնվեն մարդիկ, ովքեր կկարողանան օգնել:
+                                        <ul type="none" class="telHelp">
+                                            <li>
+                                                <span class="lnr lnr-phone-handset"></span>
+                                                <a href="tel:37491000493">091 00 04 93</a>
+                                            </li>
+                                            <li>
+                                                <span class="lnr lnr-phone-handset"></span>
+                                                <a href="tel:37477700943">077 70 09 43</a>
+                                            </li>
+                                            <li>
+                                                <span class="lnr lnr-phone-handset"></span>
+                                                <a href="tel:37444363530">044 36 35 30</a>
+                                                        
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <div class="datePublication text-muted d-flex flex-column-reverse flex-lg-row  justify-content-between" >
+                                        <a href="javascript:void(0)" onclick="showComment()"> Մեկնաբանություններ <span class="lnr lnr-arrow-down"></span></a>
+                                        <p>
+                                            <span class="lnr lnr-calendar-full"></span>
+                                            Երք , Օգս 07 2018 @ 11:28
+                                        </p>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-10 offset-md-1  border-top commentNone">
+                                <h4 class="pt-3">Մեկնաբանություններ</h4>
+                                <div class="commentsCharity">
+                                    <div class="userBlock d-flex align-items-start">
+                                        <img src="./img/avatar.png" style="max-width:35px;" alt="">
+                                        <div class="commentUser">
+                                            <h6>Tigran</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa praesentium architecto corrupti porro possimus voluptatem eum. Quod nam rerum non earum, atque iste, a odio dignissimos porro ratione qui obcaecati.</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <form action="" id="addCommentCharity">
+                                    <textarea name="" class="form-control mt-4" rows="4" placeholder="Add comment"></textarea>
+                                    <input type="submit" class="addCharityComment" value="Add">
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="footerLogo">
+                        <p data-second="Pro" class="mb-0">Charity </p>
+                        <span>© 2017 - <blockquote class="yearChange"></blockquote> | <a href="termsconditions.html">PRIVACY POLICY</a></span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-5">
+                    <div class="whoWeAre">
+                        <h2 class="footHeaders">Who we are</h2>
+                        <ul type="none">
+                            <li><a href="about.html#history-about">History</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Coopocate partners</a></li>
+                        </ul>  
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="whatWeDo">
+                        <h2 class="footHeaders">What we do</h2>
+                        <ul type="none">
+                            <li><a href="#">Our approach</a></li>
+                            <li><a href="#">Our mission</a></li>
+                            <li><a href="#">Valantering</a></li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>  
+
+    <span class="lnr lnr-chevron-up jumpTo"></span>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/stories-more.js"></script>
+  
+
+
+</body>
+</html>

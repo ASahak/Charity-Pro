@@ -1,0 +1,954 @@
+@import './mixins';
+@import './extends';
+
+@import './variables';
+
+
+/*___________________ Header start  _______________________*/
+header{
+    padding-bottom: 20px;
+}
+.logo-content {
+    color: #000;
+    &:hover{
+        color: #000;
+        text-decoration: none !important;
+
+    }
+}
+.loginIcon{
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+}
+.loginWrap {
+    padding: 35px 0 10px;
+    position: relative;
+}
+
+.loginForm {
+    position: absolute;
+    right: 0;
+    padding: 32px 22px 24px;
+    background: $globalColorWhite;
+    width: 280px;
+    z-index:27;
+    @include transformOrigin();
+    .headerForm{
+        text-transform: uppercase;
+        font-size:18px; 
+        padding: 10px;
+    }
+    #loginForma > ::-webkit-input-placeholder {
+        color:$globalColorGrey;
+    }
+      
+    #loginForma {
+        input{
+            @extend %extend-form-input;
+        }
+        > a{
+            color: $globalColorRed;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: underline;
+            padding: 4px 0;
+        }
+        .loginButton{
+            @extend %extend-input-register-login;
+        }
+    }
+}
+.registerForm{
+    position: absolute;
+    right: 0;
+    padding: 32px 22px 24px;
+    background: $globalColorWhite;
+    width: 280px;
+    z-index:27;
+    @include transformOrigin();
+    .headerForm{
+        text-transform: uppercase;
+        font-size:18px; 
+        padding: 10px;
+    }
+    #registerForma > ::-webkit-input-placeholder {
+        color:$globalColorGrey;
+    }
+    #registerForma {
+        input:not(.notSelect){
+            @extend %extend-form-input;
+        }
+        > a{
+            color: $globalColorRed;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: underline;
+            padding: 4px 0;
+        }
+        .loginButton{
+            @extend %extend-input-register-login;
+        }
+        .genderBlock {
+            text-align: left;
+            font-family: sans-serif;
+        }
+        .agreeClass{
+            text-align: left;
+            font-size: 13px;
+        }
+    }
+
+
+}
+
+
+.logo-content > p:after{
+    content: attr(data-second);
+    color: $globalColorRed
+}
+.logo-content > span{
+    display: block;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+.logo-content > p{
+    font-size: 35px;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+    > li:last-child > a:after{
+        display: none;
+    }
+    > li > a{
+        display: inline-block;
+        padding: 5px 25px;
+        color: #212121;
+        font-weight: 900;
+        font-size: 18px;
+        text-transform: lowercase;
+        text-decoration: none; 
+        position: relative;
+        @include transition(pointer);
+        font-family: slack-bold;
+        &:hover{
+            color: #afa9a5 !important;
+        }
+        &:after{
+            content:"/";
+            position: absolute;
+            right: -3px;
+            top: 6px;
+        } 
+    }
+}
+.donateBlock {
+    position: relative;
+    .addDonateWrap{
+        right: 0;
+        transform: scale(0);
+        opacity:0;
+        transition: all 0.5s ease;
+        transform-origin: 100% 0%;
+        position: absolute;
+        min-width: 300px;
+        z-index: 27;
+    }
+}
+.headerFixed{
+    transition: .4s;
+    position: relative;
+    top: 0px;
+}
+nav{
+    position: relative;
+    top:10px;
+    transition: .4s; 
+} 
+.navBackground{
+    background-color:$globalColorWhite;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 28;
+}
+.fixedNav{
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.active-link > a{
+    color: #afa9a5 !important;
+}
+.lastButton{
+    display: block;
+    @include transition(pointer);
+    @extend %extend-button-red;
+    > img{
+        max-width: 40px;
+        padding: 7px 7px 7px 7px !important;
+        @extend %extend-span;
+    }
+    &:hover{
+        color: $globalColorWhite;
+        background-color: #000;
+        text-decoration: none;
+    }
+}
+
+// first section
+#oblation{
+    position: relative;
+    padding: 100px 0;
+}
+#oblation:after{
+    content:"";
+    position: absolute;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/headercontentbg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+.left-oblation {
+    width: 450px;
+    background: #c82f2e;
+    color: $globalColorWhite;
+    padding: 35px;
+    margin: 100px 0;
+    > a{
+        color:$globalColorWhite;
+        font-size: 20px;
+        position: relative;
+        margin-bottom: 40px;
+        display: inline-block;
+        text-decoration: none;
+        span:last-child{
+            right: -50px;
+            font-weight: 600;
+            position: absolute;
+            @extend %extend-span;
+        }
+        span:first-child{
+            display: block;
+        }
+    }
+    h1{
+        padding-bottom: 15px;
+        a{
+            color:#fff;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        // position: relative;
+        // opacity: 0;
+        // top:-35px;
+        // @include transition(auto);
+    }
+   
+    .textOblation {
+        margin-bottom: 55px;
+        // position: relative;
+        // opacity: 0;
+        // top:-35px;
+        // @include transition(auto);
+    }
+}
+.dottedText {
+    height: 150px;
+}
+// first section
+
+
+// second section
+.mainTop{
+    position: relative;
+    padding: 40px 0;
+    &:after{
+        position: absolute;
+        left: 0;
+        top: -70px;
+        bottom: 0;
+        right: 45%;
+        content: "";
+        background: url(../img/maintop.png);
+        background-size:cover;
+        z-index: -1;
+    }
+}
+.joinUs{
+    color: $globalColorWhite;
+}
+
+.textJoin{
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.joinUsButton{
+    @include transition(pointer);
+    @extend %extend-button-red;
+    display: inline-block;
+    &:hover{
+        background-color:$globalColorWhite;
+        color:  $globalColorRed;
+        text-decoration: none;
+    }
+    > span{
+        @extend %extend-span;
+    }
+}
+.events h1{
+    margin-bottom: 25px
+}
+.textEvents {
+    font-size: 16px;
+    color: #aba4a0;
+    margin-bottom: 25px;
+}
+.events {
+    background-color: $globalColorWhite;
+    padding: 15px 45px 25px;
+}
+.eventsButton{
+    @include transition(pointer);
+    display: inline-block;
+    background-color: $globalColorWhite;
+    color: $globalColorRed;
+    @extend %extend-button-red;
+    &:hover > span{
+        box-shadow:-2px 0px 1px -2px #000;
+    }
+    > span{
+        box-shadow:-2px 0px 1px -2px $globalColorRed;
+        @extend %extend-span;
+    }
+    &:hover{
+        background-color:$globalColorWhite;
+        color:  #000;
+        text-decoration: none;
+    }
+}
+// second section
+
+
+
+// Threth section
+.success h1{
+    font-size: 60px;
+    letter-spacing: 3px;
+    line-height: 72px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    color: $globalColorRed
+}
+.successedText {
+    font-size: 18px;
+    color: #aba4a0;
+}
+.successedButton{
+    @include transition(pointer);
+    display: inline-block;
+    background-color: $bgBody !important;
+    color: $globalColorRed;
+    @extend %extend-button-red;
+
+    &:hover{
+        background-color:$globalColorWhite;
+        color:  #000;
+        text-decoration: none;
+    }
+    > span{
+        box-shadow:-2px 0px 1px -2px $globalColorRed;
+        @extend %extend-span;
+    }
+    &:hover > span{
+        box-shadow:-2px 0px 1px -2px #000;
+    }
+}
+.rightSection {
+    background: $globalColorRed;
+    padding: 55px 45px;
+    color: $globalColorWhite;
+    h1{
+        margin-bottom: 35px;
+    }
+}
+// Threth section
+
+
+// Forth section
+.storiesHeader h1{
+    font-size: 70px;
+    color:$globalColorWhite
+
+}
+.eventsDate:before{
+    content: "";
+    background-image: url(../img/BOTTOM.png);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-color: #212121;
+    background-size: contain;
+    background-position: bottom left;
+}
+.eventsDate{
+    position: relative;
+
+    .container{
+        background-color: #212121;
+    }
+}
+.eventsCol{
+    color:$globalColorWhite;
+    padding:35px; 
+    ul {
+        padding: 0;
+        margin-bottom: 0;
+        li {
+            
+            border-bottom: 1px solid #696665;
+            padding: 15px 0;
+            @include transition(pointer);
+            >a{
+                display: flex;
+                align-items: center;
+                color: $globalColorWhite;
+                &:hover{
+                    text-decoration: none;
+                }
+                p{
+                    margin-bottom: 0;
+                    padding-left: 35px;
+                    color:#696665;
+                    position: relative;
+                    height: 70px;
+                    overflow: hidden;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        left: 7px;
+                        top: 0;
+                        height: 80%;
+                        width: 1px;
+                        background-color: #696665;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+                span{
+                    padding: 10px;
+                    font-size: 22px;
+                }
+            }
+            &:hover{
+                border-bottom-color:$globalColorRed; 
+                background: $globalColorRed;
+            }
+            &:hover p{
+                color: $globalColorWhite;
+            }
+            &:hover p:after{
+                background-color: $globalColorRed;
+            }
+           
+            &:last-child{
+                border-bottom:0px;
+            }
+            
+        }
+    }
+}
+
+.storiesHeader {
+    position: absolute;
+    bottom: 80px;
+}
+.reportButton .yearReport{
+    color: $globalColorRed;
+}
+.reportButton{
+    width: 250px;
+    margin: auto;
+    display: block ;
+    @include transition(pointer);
+    background-color: transparent !important;
+    color: $globalColorRed;
+    @extend %extend-button-red;
+
+    > span:first-child{
+        box-shadow:-2px 0px 1px -2px $globalColorWhite;
+        @extend %extend-span;
+    }
+    &:hover > span:first-child{
+        color:  $globalColorRed;
+        box-shadow:-2px 0px 1px -2px $globalColorWhite;
+    }
+    &:hover{
+        background-color:$globalColorRed;
+        color:  $globalColorRed;
+        text-decoration: none;
+    }
+}
+
+// Forth section
+
+.wordsText{
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #aba4a0;
+    margin-bottom: 35px;
+}
+.wordPeople {
+    position: relative;
+    top: -50px;
+    padding: 85px 35px;
+    background: $globalColorWhite;
+}
+.buuts_swiper {
+    position: absolute;
+    bottom: -10px;
+    right: 50px;
+    display: flex;
+    width: 80px;
+    height: 30px;
+    > div{
+        background-image: none !important;
+        height: 100%;
+        margin-top: 0;
+        top: 0;
+        text-align: center;
+        span{
+            color:$globalColorRed;
+            font-weight: 600;
+            @include transition(pointer);
+            &:hover{
+                color:$globalColorGrey;
+            }
+        }
+    }
+    &:after{
+        content:"";
+        position: absolute;
+        width: 2px;
+        height: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: rotate(15deg);
+        background-color: $globalColorRed
+    }
+}
+.suscribeButton{
+    @include transition(pointer);
+    color: $globalColorWhite;
+    @extend %extend-button-red;
+    width: 200px;
+    text-align: center;
+    border: none;
+    &:hover{
+        background-color:#000;
+        color:  $globalColorWhite;
+        text-decoration: none;
+    }
+    > span{
+        @include transition(pointer);
+        box-shadow:-2px 0px 1px -2px #000;
+        @extend %extend-span;
+    }
+    &:hover > span{
+        box-shadow:-2px 0px 1px -2px $globalColorWhite;
+    }
+}
+.subscribeInput{
+    display: block;
+    padding: 15px;
+    border: none;
+    width: 350px;
+    margin-bottom: 25px;
+}
+.newsLetter{
+    padding-left: 45px;
+    h2{
+        text-transform: uppercase;
+        margin: 45px 0 20px;
+    }
+    p{
+        font-size: 18px;
+        letter-spacing: 1px;
+        width: 350px;
+        color: $globalColorGrey;
+    }
+}
+
+// Fifth section
+
+// Footer
+footer{
+    .footerLogo {
+        > p{
+            font-size: 35px;
+            &:after{
+                content: attr(data-second);
+                color: $globalColorRed
+            }
+        }
+        > span{
+            display: flex;
+            letter-spacing: 1px;
+            font-size: 11px;
+            a{
+                margin-left: 5px
+            }
+            blockquote{
+                
+                margin:0 5px
+            }
+        }
+    }
+    .footHeaders{
+        font-size: 22px;
+        display: inline-block;
+        border-bottom: 1px solid;
+        margin-bottom: 35px;
+        padding-top: 15px;
+    }
+    .whoWeAre, .whatWeDo{
+        ul{
+            padding: 0;
+            li{
+                padding: 2px 0;
+                a{
+                    color: $globalColorRed;
+                    @include transition(pointer);
+                    &:hover{
+                        color: $globalColorGrey;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+// Footer
+.jumpTo{
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 45px;
+    height:45px;
+    text-align: center;
+    line-height:45px;
+    opacity: 0;
+    background-color: $globalColorRed;
+    color: $globalColorWhite;
+    border-radius: 50%; 
+    @include transition(pointer);
+    &:hover{
+        background-color: #000;
+
+    }
+}
+footer{
+    padding-top:35px;
+}
+// Footer
+@media screen and (max-width:1200px) and (min-width:991px){
+    #oblation {
+        padding: 50px 0;
+    }
+    .events h1{
+        font-size: 25px;
+    }
+    .textEvents {
+        font-size: 15px;
+    }
+    .navBar > li > a {
+        padding: 5px 15px;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: slack;
+    }
+}
+@media screen and (max-width:991px) and (min-width:767px){
+    .logo-content  {
+        p{
+            font-size: 27px;
+        }
+        span{
+            display: block;
+            letter-spacing: 3px;
+            font-size: 10px;
+        }
+    }
+    .navBar > li > a {
+        padding: 5px 10px;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: slack;
+    }
+    .left-oblation {
+        width:400px;
+        > h1{
+            font-size: 25px;
+        }
+    }
+    .left-oblation{
+        .textOblation {
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+    }
+    .dottedText {
+        height: 70px;
+    }
+    .events{
+        
+        h1{
+            font-size: 21px;
+        }
+        .textEvents {
+            font-size: 15px;
+            color: #aba4a0;
+        }
+    }
+    #oblation {
+        padding: 30px 0;
+    }
+    .success h1 {
+        font-size: 40px;
+        line-height: 52px;
+    } 
+    .successedText {
+        font-size: 15px;
+    }
+    .rightSection {
+        padding: 35px 35px;
+        h1{
+            font-size: 30px;
+        }
+        .offeredText{
+            font-size: 15px;
+        }
+    }
+    .storiesHeader{
+        h1 {
+            font-size: 40px;
+        }
+    }
+    .reportButton{
+        background-color: transparent !important;
+    }
+    .newsLetter {
+        padding-left: 15px;
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .subscribeInput{
+        width: 100%
+    }
+    .suscribeButton{
+        width: 160px;
+    }
+    .buuts_swiper{
+        right: 10px;
+    }
+
+}
+@media screen and (max-width:767px){
+    body{
+        padding-top: 50px;
+    }
+    .navBackground{
+        background-color: transparent;
+        position: relative;
+    }
+    .subscribeInput{
+        width: 100%;
+    }
+    .newsLetter p{
+        width: 100%;
+    }
+    .newsLetter {
+        padding-left: 0;
+    }
+    .homeTop{
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        background: #ffff;
+        display: flex !important;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2222;
+        span{
+            margin-right: 15px;
+            font-size:30px;
+            cursor: pointer;
+        }
+    }
+    
+    .navBar
+    {
+        box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
+        transition: .4s;
+        position: fixed;
+        left:-250px;
+        top: 50px;
+        flex-direction: column;
+        width: 250px;
+        background-color: #fff;
+        height: 100%;
+        align-items: end;
+        justify-content: end;
+        z-index: 2222;
+        > li.active-link{
+            background-color: #212121;
+        }
+        > li{
+            display: block;
+            width: 100%;
+            a{
+                display: block;
+                width: 100%;
+                padding: 15px 25px;
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+   
+}
+@media screen and (max-width:767px) and (min-width:576px){
+    .left-oblation {
+        width: 100%;
+        margin: 20px 0;
+    }
+    #oblation {
+        position: relative;
+        padding: 30px 0 130px 0;
+        &:after{
+            background-size:cover; 
+        }
+    }
+    .mainTop:after {
+        background: url(../img/maintop.png) no-repeat;
+        background-size: cover;
+        right: 0;
+    }
+    .joinUsButton{
+        margin-bottom: 25px;
+    }
+    .storiesHeader {
+        position: relative;
+        bottom: 0;
+        margin-top: 40px;
+    }
+    .wordPeople{
+        top: -30px;
+    }
+    .newsLetter{
+        margin-bottom: 35px;
+    }
+    .footerLogo{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width:576px){
+    .lastButton{
+        margin-top: 25px;
+    }
+    .left-oblation  h1{
+        font-size: 22px;
+    }
+    .left-oblation{
+        width: 100%;
+        .textOblation {
+            margin-bottom: 25px;
+            font-size: 13px;
+        }
+    }
+    .dottedText {
+        height: 70px;
+    }
+    #oblation{
+        padding: 10px 0;
+        &:after{
+            background-size: cover;
+        }
+    }
+    .mainTop:after {
+        content: "";
+        background: none;
+        right: 0;
+        background-color: #121212;
+        z-index: -1;
+    }
+    .joinUsButton{
+        margin-bottom: 25px
+    }
+    .events {
+        padding: 45px 25px;
+        h1 {
+            font-size: 20px;
+        }
+        .textEvents{
+            font-size: 14px;
+        }
+    }
+    .success{
+
+        h1{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .successedText{
+            font-size: 14px;
+        }
+    } 
+    .storiesHeader {
+        position: relative;
+        bottom: 0;
+        margin-top: 40px;
+        h1{
+            font-size: 34px;
+        }
+    }
+    .eventsCol{
+        padding: 35px 0;
+    }
+    .wordPeople {
+        top: -20px;
+        padding: 45px 35px;
+    }
+    .buuts_swiper{
+        right: 10px;
+    }
+    .footerLogo{
+        margin-top: 35px;
+    }
+}
+/*___________________ Header end  _______________________*/

@@ -1,0 +1,102 @@
+@import './mixins';
+@import './extends';
+
+@import './variables';
+.charitySlider{
+
+    .next_large, .prev_large{
+        background-color: rgba(0,0,0,0.4);
+        width: 35px;
+        background-size: 60% !important;
+    }
+
+}
+.charitySliderThumb{
+
+    .thumb_slide_item {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}
+.telHelp{
+    display: flex;
+    padding: 0;
+    li{
+        margin-right: 15px;
+        a{
+            font-size: 14px;
+            text-decoration: none;
+            color:#717070;
+            @include transition(pointer);
+            &:Hover{
+                color: $globalColorRed
+            }
+        }
+    }
+}
+.datePublication{
+    font-size: 14px;
+    float: right;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: calc(100% - 30px);
+    p{
+        margin-bottom: 0;
+    }
+}
+.commentNone{
+    visibility: hidden;
+    transition: .4s;
+    overflow: hidden;
+}
+.bgWhiteCharity{
+    padding: 15px;
+    background-color: $globalColorWhite;
+}
+.userBlock{
+    box-shadow: 0px 3px 4px -3px #ccc;
+    margin-top: 15px
+}
+.addCharityComment{
+    margin-top: 15px;
+    margin-left: auto;
+    display: block;
+    @extend %extend-add-button;
+}
+.commentUser{
+    font-family: sans-serif;
+    padding-left: 15px;
+    p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:991px) and (min-width:767px){
+    .telHelp {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:576px){
+    .charityDescripition{
+        p{
+            word-break: break-word;
+        }
+        .telHelp {
+            display: flex;
+            flex-direction: column;
+        }
+        .datePublication {
+            position: static;
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+    .commentNone{
+        h4{
+            font-size: 20px;
+        }
+    }
+}

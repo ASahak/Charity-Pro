@@ -1,0 +1,43 @@
+@mixin transition($cursor) {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: $cursor;
+}
+@mixin transformOrigin() {
+    -webkit-transform-origin: 100% 0%;
+    -o-transform-origin: 100% 0%;
+    -moz-transform-origin: 100% 0%;
+    -o-transform: scale(0);
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+@mixin date(){
+    margin:0 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #000;
+    color: $globalColorWhite;
+    font-size: 26px;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+}
+@mixin leftRight($Right, $Left, $rowReverse){
+    z-index: 22;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: $Right;
+    left:$Left;
+    flex-direction: $rowReverse;
+}
+

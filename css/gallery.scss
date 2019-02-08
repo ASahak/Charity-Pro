@@ -1,0 +1,111 @@
+@import './mixins';
+@import './extends';
+
+@import './variables';
+
+.gallMore{
+    a{
+        margin: 0 25px 0 0;
+    }
+    span{
+        margin-left: 5px !important;
+    }
+}
+.gallerySwiper{
+    .next_large, .prev_large{
+        background-color: rgba(200, 47, 46, 0.73);
+        width: 35px;
+        background-size: 60% !important;
+    }
+}
+.galleryContent{
+    > div a {
+        position: relative;
+        display: block;
+        margin-bottom: 25px;
+        overflow: hidden;
+        &:after{
+            position: absolute;
+            content:"";
+            left: 0;
+            width: 100%;
+            top: 0;
+            height: 100%;
+            opacity: 0;
+            transition: .4s;
+            background-color: rgba(0,0,0,0.5)
+        }
+        i:hover{
+            transform: rotate(90deg)
+        }
+        i{
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            bottom: 0;
+            height: 25px;
+            width: 25px;
+            text-align: center;
+            line-height:25px;
+            color: #fff;
+            margin: auto;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            font-size: 25px;
+            transition: .4s; 
+        }
+        &:hover i, span{
+            opacity: 1;
+        }
+        &:hover:after{
+            opacity: 1;
+        }
+        &:hover  span{
+            opacity: 1;
+        }
+        span{
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            bottom: 0;
+            text-align: center;
+            line-height:25px;
+            color: #fff;
+            margin: auto;
+            height: 25px;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            font-size: 20px;
+            transition: .4s; 
+        }
+    }
+}
+.pageinationGallery{
+    margin-top: 45px;
+    text-align: center;
+    position: relative;
+    .activePage{
+        color: $globalColorRed;
+    }
+    .disabledPage {
+        span{
+            color: #b78484;
+            cursor: default;
+        }
+    }
+    a{
+        display: inline-block;
+        width: 25px;
+        text-align: center;
+        color: $globalColorGrey;
+        text-decoration: none;
+    }
+    span{
+        color: $globalColorRed;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 600;
+    }
+}

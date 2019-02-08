@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CarityPro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/initTelInput.css">   
+</head>
+<body>
+    <header>
+        <div class="d-block d-md-none homeTop">
+            <span class="lnr lnr-menu clickMobileMenu"></span>
+            Home
+        </div>
+        <div class="container">
+            <div class="top-panel">
+                <div class="loginWrap text-right">
+                    <span class="lnr lnr-user loginIcon" ></span>
+                    <div class="loginForm">
+                        <h3 class="headerForm text-left">Login Form:</h3>
+                        <form name="" action="" method="" id="loginForma" class="d-flex align-items-start flex-column">
+                            <input type="text" name="username" placeholder="Username">
+                            <input type="password" name="password" placeholder="Password">
+                            <a href="password-reset.html">Forgot your username?</a>
+                            <a href="password-reset.html">Forgot your password?</a>
+                            <button type="submit" class="loginButton">Log in</button>
+                            <a href="javascript:void(0)" class="registerFunc">Or Register</a> 
+                        </form>   
+                    </div>
+                    <div class="registerForm">
+                        <h3 class="headerForm text-left">Register Form:</h3>
+                        <form name="" action="" method="" id="registerForma" class="d-flex align-items-start flex-column">
+                            <input type="text" name="username" placeholder="Username">
+                            <input type="email" name="email" placeholder="email">
+                            <div class="genderBlock">
+                                <span>Gender</span>
+                                <p class="mb-0">
+                                    <label for="male">
+                                        <input type="radio" class="notSelect" id="male" name="gender"> :Male
+                                    </label>
+                                    <label for="female">
+                                        <input type="radio" class="notSelect" id="female" name="gender"> :Female
+                                    </label>
+                                </p>  
+                            </div> 
+                            <input type="password" name="password" placeholder="password">  
+                            <input type="password" name="confirm-password" placeholder="confirm password">  
+                            <label for="agree" class="agreeClass">
+                                <input type="checkbox" id="agree" class="notSelect" name="agree">
+                                <a href="termsconditions.html">Համաձայն եմ գաղտնիության քաղաքականությանը</a>
+                            </label>
+                            <button type="submit" class="loginButton">Register</button>
+                        </form>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="row">          
+                    <div class="col-12 d-flex flex-column flex-sm-row justify-content-between align-items-center headerFixed">
+                        <a href="index.html" class="d-block logo-content">
+                            <p data-second="Pro" class="mb-0">Charity </p>
+                            <span>charity organization</span>
+                        </a>
+                        <ul class="navBar" type="none">
+                            <li ><a href="index.html">Home</a></li>
+                            <li><a href="forum.html">Forum</a></li>
+                            <li class="active-link"><a href="javascript:void(0)">Work</a></li>
+                            <li><a href="stories.html">Stories</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li ><a href="about.html">About Us</a></li>
+                        </ul>
+                        <div class="donateBlock">
+                            <a href="javascript:void(0)" class="lastButton logined">Donate <img src="./img/donation.svg"></a>
+                            <div class="addDonateWrap">
+                                <form action="" class="addWorkForm">
+                                    <input type="text" placeholder="Նվիրաբերություն" name="donate" >
+                                    <textarea rows="4" placeholder="Նկարագրություն" name="subject"></textarea>
+                                    <select class="filterCitys">
+                                        <option value="">Տեխնիկա</option>
+                                        <option value="1">Հագուստ</option>
+                                        <option value="2">Ամեն ինչ տան համար</option>
+                                        <option value="3">Գործիքներ և նյութեր</option>
+                                        <option value="4">Այլ</option>
+                                    </select>
+                                    <div class="telBlock d-flex align-items-center form-control">
+                                        <input type="tel" class="filter_input new-don input-phone job-phone">
+                                    </div>
+                                    <span  class="valid-msg-job d-none">✓ Հեռախոսահամարը ճիշտ է լրացված</span>
+                                    <span  class="error-msg-job d-none">✗ Հեռախոսահամարը սխալ է լրացված</span>
+                                    <label class="file-label">
+                                        <input class="file-input" name="url" type="file">
+                                        <span class="file-cta">
+                                            <span class="file-icon">
+                                                <span class="lnr lnr-upload"></span>
+                                            </span>
+                                            <span class="file-label">
+                                            choses Image...
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <input type="submit" class="addWork" value="Ավելացնել">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="wayPath">
+                        <p class="mb-0 ">
+                            <a href="index.html">home</a>
+                            <span>work</span>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="workSection">
+                        <h5>Փնտրել Աշխատանք</h5>
+                        <form action="" name="work" class="workForm">
+                            <input type="text" class="workInput" placeholder="Աշխատանք">
+                            <select name="" class="filterCategories">
+                                <option value="">Կատեգորիա</option>
+                                <option value="2">Ռեստորաններ</option>
+                                <option value="3">Դիզայն</option>
+                                <option value="4">Գրասենյակային</option>
+                                <option value="5">Տրանսպորտ</option>
+                                <option value="6">Շինարարություն</option>
+                                <option value="7">Առևտուր</option>
+                            </select>
+                            <select class="filterCitys">
+                                <option value="">Տարածաշրջան</option>
+                                <option value="1">Աբովյան</option>
+                                <option value="2">Ալավերդի</option>
+                            </select>
+                            <input type="submit" class="searchWork" value="Search">
+                        </form>
+                        <button class="addWorkButton">Ավելացնել աշխատանք</button>
+                        <div class="addWorkWrap">
+                            <form action="" class="addWorkForm">
+                                <input type="text" placeholder="Աշխատանք" name="name" >
+                                <textarea rows="4" placeholder="Նկարագրություն" name="subject"></textarea>
+                                <div class="telBlock d-flex align-items-center form-control">
+                                    <input type="tel" class="filter_input new-don input-phone job-phone2">
+                                </div>
+                                <span class="valid-msg-job2 d-none">✓ Հեռախոսահամարը ճիշտ է լրացված</span>
+                                <span class="error-msg-job2 d-none">✗ Հեռախոսահամարը սխալ է լրացված</span>
+                                <input type="email" name="email" placeholder="email">
+                                <select name="" class="filterCategories">
+                                    <option value="">Կատեգորիա</option>
+                                    <option value="2">Ռեստորաններ</option>
+                                    <option value="3">Դիզայն</option>
+                                    <option value="4">Գրասենյակային</option>
+                                    <option value="5">Տրանսպորտ</option>
+                                    <option value="6">Շինարարություն</option>
+                                    <option value="7">Առևտուր</option>
+                                </select>
+                                <select class="filterCitys">
+                                    <option value="">Տարածաշրջան</option>
+                                    <option value="1">Աբովյան</option>
+                                    <option value="2">Ալավերդի</option>
+                                </select>
+                                <label class="file-label">
+                                    <input class="file-input" name="url" type="file">
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <span class="lnr lnr-upload"></span>
+                                        </span>
+                                        <span class="file-label">
+                                        choses Image...
+                                        </span>
+                                    </span>
+                                </label>
+                                <input type="submit" class="addWork" value="Ավելացնել">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="row worksCategories">
+                        <div class="col-12 col-md-6 col-lg-4 wrapDest">
+                            <a class="categWrap d-block" href="work-more.html">
+                                <img src="./img/work1.jpeg" alt="" class="img-fluid">
+                                <span class="lnr lnr-eye"></span>
+                            </a>
+                            <span>Ռեստորաններ</span>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 wrapDest">
+                            <a class="categWrap d-block" href="work-more.html">
+                                <img src="./img/work2.jpeg" alt="" class="img-fluid">
+                                <span class="lnr lnr-eye"></span>
+                            </a>
+                            <span>Դիզայն</span>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 wrapDest">
+                            <a class="categWrap d-block" href="work-more.html">
+                                <img src="./img/work3.jpeg" alt="" class="img-fluid">
+                                <span class="lnr lnr-eye"></span>
+                            </a>
+                            <span>Գրասենյակային</span>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 wrapDest">
+                            <a class="categWrap d-block" href="work-more.html">
+                                <img src="./img/work4.jpeg" alt="" class="img-fluid">
+                                <span class="lnr lnr-eye"></span>
+                            </a>
+                            <span>Տրանսպորտ</span>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 wrapDest">
+                            <a class="categWrap d-block" href="work-more.html">
+                                <img src="./img/work5.jpeg" alt="" class="img-fluid">
+                                <span class="lnr lnr-eye"></span>
+                            </a>
+                            <span>Շինարարություն</span>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 wrapDest">
+                            <a class="categWrap d-block" href="#">
+                                <img src="./img/work6.jpeg" alt="" class="img-fluid">
+                                <span class="lnr lnr-eye"></span>
+                            </a>
+                            <span>Առևտուր</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div> 
+        </div>
+    </main>
+    <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="footerLogo">
+                            <p data-second="Pro" class="mb-0">Charity </p>
+                            <span>© 2017 - <blockquote class="yearChange"></blockquote> | <a href="termsconditions.html">PRIVACY POLICY</a></span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-5">
+                        <div class="whoWeAre">
+                            <h2 class="footHeaders">Who we are</h2>
+                            <ul type="none">
+                                <li><a href="about.html#history-about">History</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Coopocate partners</a></li>
+                            </ul>  
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="whatWeDo">
+                            <h2 class="footHeaders">What we do</h2>
+                            <ul type="none">
+                                <li><a href="#">Our approach</a></li>
+                                <li><a href="#">Our mission</a></li>
+                                <li><a href="#">Valantering</a></li>
+                            </ul>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+    
+        <span class="lnr lnr-chevron-up jumpTo"></span>
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script src="js/initTelInput.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/masked-input.js"></script>
+        <script src="js/job.js"></script>
+
+        <script>
+            document.querySelector('.addWorkButton').addEventListener("click", (e)=>{
+                document.querySelector('.addWorkWrap').style.display = (document.querySelector('.addWorkWrap').style.display) ==  "block"?"none":"block"
+            })
+
+        </script>
+    </body>
+    </html>

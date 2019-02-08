@@ -1,0 +1,219 @@
+@import './mixins';
+@import './extends';
+
+@import './variables';
+
+
+.afterForm:after{
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2223;
+    
+}
+.addForumForm{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 400px;
+    margin: auto;
+    z-index: 2224;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px -3px #ccc;
+    transition: .4s;
+    transform: scale(0.6);
+    visibility: hidden;
+    opacity: 0;
+
+}
+.closeFormForum {
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    top: 15px;
+    cursor: pointer;
+}
+.twoWrap{
+    >div{
+        margin: 0 30px 0 0;
+        border-left: 4px solid $globalColorRed;
+        padding-left:15px;
+        p{
+            font-family: sans-serif;
+            color: $globalColorGrey;
+        }
+    } 
+}
+.addForum{
+    #addForumClick {
+        @extend %extend-add-button;
+        .ripple{
+            position: absolute;
+            animation-name:ripple;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            background-color:rgba(255, 255, 255, .4);
+            border-radius: 50%; 
+            width:100px;
+             height: 100px;
+             transform-origin: center;
+            
+        }
+        @keyframes ripple{
+            0% {
+                transform: scale(0)
+            }
+            50%{
+                
+                transform: scale(2)
+            }
+            100%{
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+    }
+}
+.tableTh {
+    background:$globalColorRed;
+    color: $globalColorWhite;
+    & p {
+        padding: 14px 0 !important;
+    }
+}
+.tableTbody{ 
+    .trchild{
+        box-shadow: 0px 4px 2px -3px #ccc;
+        p{
+            position: relative;
+            &:first-child:after{
+                display: none
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 12px;
+                height: 25px;
+                width: 1px;
+                background-color: $globalColorGrey;
+            }
+        }
+    }
+}
+.trchild{
+    display: flex;
+    justify-content: space-between;
+    p {
+        text-align: center;
+        margin-bottom: 0;
+        padding: 10px 0;
+      
+        span.lnr{
+            font-weight:600;
+            display: inline-block;
+            margin-right: 15px;
+        }
+        a{
+            display: inline-block;
+            margin-right: 15px;
+            color: #000;
+            text-decoration: none;
+            font-family: sans-serif;
+            img{
+                display: inline-block;
+                margin-right: 15px;
+            }
+        }
+    }
+    & p:nth-child(1){
+        width: 40%
+    }
+    & p:nth-child(2){
+        width: 20%
+    }
+    & p:nth-child(3){
+        width: 20%
+    }
+    & p:nth-child(4){
+        width: 20%
+    }
+
+}
+.formBottom{
+    padding-top: 30px;
+    text-align: right;
+    .addButton{
+        @extend %extend-add-button;
+    }
+    .closeButton{
+        border: 1px solid #ccc;
+        background: none;
+        padding: 4px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: .4s;
+        &:hover{
+            background-color: $globalColorGrey;
+            color: $globalColorWhite;
+        }
+    }
+}
+.labelTop{
+    position: relative;
+    margin-top: 23px;
+    label{
+        position: absolute;
+        top: 6px;
+        left: 15px;
+        color: $globalColorGrey;
+        cursor: auto;
+        transition: .4s;
+    }
+}
+@media screen and (max-width:991px) and (min-width:767px){
+    .tableTbody {
+        .trchild p:nth-child(1), .trchild p:nth-child(4){
+            font-size: 13px;
+        }
+    } 
+}
+@media screen and (max-width:767px) {
+    .tableForum{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .trchild {
+        width: 800px;
+    }
+    .addForumForm{
+        width: 90%;
+    }
+}
+@media screen and (max-width:576px) {
+    .tableTbody {
+        .trchild p:nth-child(1), .trchild p:nth-child(4){
+            font-size: 13px;
+        }
+    } 
+    .tableTh.trchild{
+        font-size: 13px;
+
+    }
+    .trchild {
+        width: 600px;
+    }
+    .twoWrap{
+        >div{
+            margin-bottom: 15px
+        }
+    }
+}

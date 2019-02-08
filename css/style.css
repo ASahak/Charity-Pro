@@ -1,0 +1,5381 @@
+.suscribeButton > span, .reportButton > span:first-child, .successedButton > span, .eventsButton > span, .joinUsButton > span, .left-oblation > a span:last-child, .lastButton > img {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.suscribeButton, .reportButton, .successedButton, .eventsButton, .joinUsButton, .lastButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapLeft:after, .commonWrapRight:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapLeft:before, .commonWrapRight:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addCharityComment, .formBottom .addButton, .addForum #addForumClick {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addCharityComment:hover, .formBottom .addButton:hover, .addForum #addForumClick:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .eventDescription .rightEventWrap .viewEvent, .commonInfo .contactInfo .closeModal, .addWorkForm .addWork, .searchWork {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .eventDescription .rightEventWrap .viewEvent:hover, .commonInfo .contactInfo .closeModal:hover, .addWorkForm .addWork:hover, .searchWork:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.registerForm #registerForma input:not(.notSelect), .loginForm #loginForma input {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.registerForm #registerForma input:focus:not(.notSelect), .loginForm #loginForma input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.registerForm #registerForma .loginButton, .loginForm #loginForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.registerForm #registerForma .loginButton:hover, .loginForm #loginForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.addWorkForm select, .workForm input[type=text], .workForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .suscribeButton, .reportButton, .successedButton, .eventsButton, .joinUsButton, .lastButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+/*___________________ Header start  _______________________*/
+header {
+  padding-bottom: 20px;
+}
+
+.logo-content {
+  color: #000;
+}
+.logo-content:hover {
+  color: #000;
+  text-decoration: none !important;
+}
+
+.loginIcon {
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.loginWrap {
+  padding: 35px 0 10px;
+  position: relative;
+}
+
+.loginForm {
+  position: absolute;
+  right: 0;
+  padding: 32px 22px 24px;
+  background: #fff;
+  width: 280px;
+  z-index: 27;
+  -webkit-transform-origin: 100% 0%;
+  -o-transform-origin: 100% 0%;
+  -moz-transform-origin: 100% 0%;
+  -o-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.loginForm .headerForm {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px;
+}
+.loginForm #loginForma > ::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+.loginForm #loginForma > a {
+  color: #c82f2f;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 4px 0;
+}
+.registerForm {
+  position: absolute;
+  right: 0;
+  padding: 32px 22px 24px;
+  background: #fff;
+  width: 280px;
+  z-index: 27;
+  -webkit-transform-origin: 100% 0%;
+  -o-transform-origin: 100% 0%;
+  -moz-transform-origin: 100% 0%;
+  -o-transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.registerForm .headerForm {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px;
+}
+.registerForm #registerForma > ::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+.registerForm #registerForma > a {
+  color: #c82f2f;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 4px 0;
+}
+.registerForm #registerForma .genderBlock {
+  text-align: left;
+  font-family: sans-serif;
+}
+.registerForm #registerForma .agreeClass {
+  text-align: left;
+  font-size: 13px;
+}
+
+.logo-content > p:after {
+  content: attr(data-second);
+  color: #c82f2f;
+}
+
+.logo-content > span {
+  display: block;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.logo-content > p {
+  font-size: 35px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+.navBar > li:last-child > a:after {
+  display: none;
+}
+.navBar > li > a {
+  display: inline-block;
+  padding: 5px 25px;
+  color: #212121;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: lowercase;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-family: slack-bold;
+}
+.navBar > li > a:hover {
+  color: #afa9a5 !important;
+}
+.navBar > li > a:after {
+  content: "/";
+  position: absolute;
+  right: -3px;
+  top: 6px;
+}
+
+.donateBlock {
+  position: relative;
+}
+.donateBlock .addDonateWrap {
+  right: 0;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform-origin: 100% 0%;
+  position: absolute;
+  min-width: 300px;
+  z-index: 27;
+}
+
+.headerFixed {
+  transition: 0.4s;
+  position: relative;
+  top: 0px;
+}
+
+nav {
+  position: relative;
+  top: 10px;
+  transition: 0.4s;
+}
+
+.navBackground {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: 28;
+}
+
+.fixedNav {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.active-link > a {
+  color: #afa9a5 !important;
+}
+
+.lastButton {
+  display: block;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.lastButton > img {
+  max-width: 40px;
+  padding: 7px 7px 7px 7px !important;
+}
+.lastButton:hover {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+}
+
+#oblation {
+  position: relative;
+  padding: 100px 0;
+}
+
+#oblation:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/headercontentbg.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.left-oblation {
+  width: 450px;
+  background: #c82f2e;
+  color: #fff;
+  padding: 35px;
+  margin: 100px 0;
+}
+.left-oblation > a {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 40px;
+  display: inline-block;
+  text-decoration: none;
+}
+.left-oblation > a span:last-child {
+  right: -50px;
+  font-weight: 600;
+  position: absolute;
+}
+.left-oblation > a span:first-child {
+  display: block;
+}
+.left-oblation h1 {
+  padding-bottom: 15px;
+}
+.left-oblation h1 a {
+  color: #fff;
+}
+.left-oblation h1 a:hover {
+  text-decoration: none;
+}
+.left-oblation .textOblation {
+  margin-bottom: 55px;
+}
+
+.dottedText {
+  height: 150px;
+}
+
+.mainTop {
+  position: relative;
+  padding: 40px 0;
+}
+.mainTop:after {
+  position: absolute;
+  left: 0;
+  top: -70px;
+  bottom: 0;
+  right: 45%;
+  content: "";
+  background: url(../img/maintop.png);
+  background-size: cover;
+  z-index: -1;
+}
+
+.joinUs {
+  color: #fff;
+}
+
+.textJoin {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.joinUsButton {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+.joinUsButton:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  text-decoration: none;
+}
+.events h1 {
+  margin-bottom: 25px;
+}
+
+.textEvents {
+  font-size: 16px;
+  color: #aba4a0;
+  margin-bottom: 25px;
+}
+
+.events {
+  background-color: #fff;
+  padding: 15px 45px 25px;
+}
+
+.eventsButton {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #fff;
+  color: #c82f2f;
+}
+.eventsButton:hover > span {
+  box-shadow: -2px 0px 1px -2px #000;
+}
+.eventsButton > span {
+  box-shadow: -2px 0px 1px -2px #c82f2f;
+}
+.eventsButton:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+.success h1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  line-height: 72px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  color: #c82f2f;
+}
+
+.successedText {
+  font-size: 18px;
+  color: #aba4a0;
+}
+
+.successedButton {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #f3eeeb !important;
+  color: #c82f2f;
+}
+.successedButton:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+.successedButton > span {
+  box-shadow: -2px 0px 1px -2px #c82f2f;
+}
+.successedButton:hover > span {
+  box-shadow: -2px 0px 1px -2px #000;
+}
+
+.rightSection {
+  background: #c82f2f;
+  padding: 55px 45px;
+  color: #fff;
+}
+.rightSection h1 {
+  margin-bottom: 35px;
+}
+
+.storiesHeader h1 {
+  font-size: 70px;
+  color: #fff;
+}
+
+.eventsDate:before {
+  content: "";
+  background-image: url(../img/BOTTOM.png);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 70%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-color: #212121;
+  background-size: contain;
+  background-position: bottom left;
+}
+
+.eventsDate {
+  position: relative;
+}
+.eventsDate .container {
+  background-color: #212121;
+}
+
+.eventsCol {
+  color: #fff;
+  padding: 35px;
+}
+.eventsCol ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+.eventsCol ul li {
+  border-bottom: 1px solid #696665;
+  padding: 15px 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.eventsCol ul li > a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.eventsCol ul li > a:hover {
+  text-decoration: none;
+}
+.eventsCol ul li > a p {
+  margin-bottom: 0;
+  padding-left: 35px;
+  color: #696665;
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+}
+.eventsCol ul li > a p:after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  height: 80%;
+  width: 1px;
+  background-color: #696665;
+  bottom: 0;
+  margin: auto;
+}
+.eventsCol ul li > a span {
+  padding: 10px;
+  font-size: 22px;
+}
+.eventsCol ul li:hover {
+  border-bottom-color: #c82f2f;
+  background: #c82f2f;
+}
+.eventsCol ul li:hover p {
+  color: #fff;
+}
+.eventsCol ul li:hover p:after {
+  background-color: #c82f2f;
+}
+.eventsCol ul li:last-child {
+  border-bottom: 0px;
+}
+
+.storiesHeader {
+  position: absolute;
+  bottom: 80px;
+}
+
+.reportButton .yearReport {
+  color: #c82f2f;
+}
+
+.reportButton {
+  width: 250px;
+  margin: auto;
+  display: block;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  background-color: transparent !important;
+  color: #c82f2f;
+}
+.reportButton > span:first-child {
+  box-shadow: -2px 0px 1px -2px #fff;
+}
+.reportButton:hover > span:first-child {
+  color: #c82f2f;
+  box-shadow: -2px 0px 1px -2px #fff;
+}
+.reportButton:hover {
+  background-color: #c82f2f;
+  color: #c82f2f;
+  text-decoration: none;
+}
+
+.wordsText {
+  font-weight: 400;
+  font-family: sans-serif;
+  color: #aba4a0;
+  margin-bottom: 35px;
+}
+
+.wordPeople {
+  position: relative;
+  top: -50px;
+  padding: 85px 35px;
+  background: #fff;
+}
+
+.buuts_swiper {
+  position: absolute;
+  bottom: -10px;
+  right: 50px;
+  display: flex;
+  width: 80px;
+  height: 30px;
+}
+.buuts_swiper > div {
+  background-image: none !important;
+  height: 100%;
+  margin-top: 0;
+  top: 0;
+  text-align: center;
+}
+.buuts_swiper > div span {
+  color: #c82f2f;
+  font-weight: 600;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.buuts_swiper > div span:hover {
+  color: #b1b1b1;
+}
+.buuts_swiper:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(15deg);
+  background-color: #c82f2f;
+}
+
+.suscribeButton {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  border: none;
+}
+.suscribeButton:hover {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+.suscribeButton > span {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  box-shadow: -2px 0px 1px -2px #000;
+}
+.suscribeButton:hover > span {
+  box-shadow: -2px 0px 1px -2px #fff;
+}
+
+.subscribeInput {
+  display: block;
+  padding: 15px;
+  border: none;
+  width: 350px;
+  margin-bottom: 25px;
+}
+
+.newsLetter {
+  padding-left: 45px;
+}
+.newsLetter h2 {
+  text-transform: uppercase;
+  margin: 45px 0 20px;
+}
+.newsLetter p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  width: 350px;
+  color: #b1b1b1;
+}
+
+footer .footerLogo > p {
+  font-size: 35px;
+}
+footer .footerLogo > p:after {
+  content: attr(data-second);
+  color: #c82f2f;
+}
+footer .footerLogo > span {
+  display: flex;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+footer .footerLogo > span a {
+  margin-left: 5px;
+}
+footer .footerLogo > span blockquote {
+  margin: 0 5px;
+}
+footer .footHeaders {
+  font-size: 22px;
+  display: inline-block;
+  border-bottom: 1px solid;
+  margin-bottom: 35px;
+  padding-top: 15px;
+}
+footer .whoWeAre ul, footer .whatWeDo ul {
+  padding: 0;
+}
+footer .whoWeAre ul li, footer .whatWeDo ul li {
+  padding: 2px 0;
+}
+footer .whoWeAre ul li a, footer .whatWeDo ul li a {
+  color: #c82f2f;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+footer .whoWeAre ul li a:hover, footer .whatWeDo ul li a:hover {
+  color: #b1b1b1;
+  text-decoration: none;
+}
+
+.jumpTo {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  opacity: 0;
+  background-color: #c82f2f;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.jumpTo:hover {
+  background-color: #000;
+}
+
+footer {
+  padding-top: 35px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  #oblation {
+    padding: 50px 0;
+  }
+
+  .events h1 {
+    font-size: 25px;
+  }
+
+  .textEvents {
+    font-size: 15px;
+  }
+
+  .navBar > li > a {
+    padding: 5px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: slack;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .logo-content p {
+    font-size: 27px;
+  }
+  .logo-content span {
+    display: block;
+    letter-spacing: 3px;
+    font-size: 10px;
+  }
+
+  .navBar > li > a {
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: slack;
+  }
+
+  .left-oblation {
+    width: 400px;
+  }
+  .left-oblation > h1 {
+    font-size: 25px;
+  }
+
+  .left-oblation .textOblation {
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+
+  .dottedText {
+    height: 70px;
+  }
+
+  .events h1 {
+    font-size: 21px;
+  }
+  .events .textEvents {
+    font-size: 15px;
+    color: #aba4a0;
+  }
+
+  #oblation {
+    padding: 30px 0;
+  }
+
+  .success h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .successedText {
+    font-size: 15px;
+  }
+
+  .rightSection {
+    padding: 35px 35px;
+  }
+  .rightSection h1 {
+    font-size: 30px;
+  }
+  .rightSection .offeredText {
+    font-size: 15px;
+  }
+
+  .storiesHeader h1 {
+    font-size: 40px;
+  }
+
+  .reportButton {
+    background-color: transparent !important;
+  }
+
+  .newsLetter {
+    padding-left: 15px;
+  }
+  .newsLetter h2 {
+    font-size: 25px;
+  }
+  .newsLetter p {
+    font-size: 14px;
+  }
+
+  .subscribeInput {
+    width: 100%;
+  }
+
+  .suscribeButton {
+    width: 160px;
+  }
+
+  .buuts_swiper {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 50px;
+  }
+
+  .navBackground {
+    background-color: transparent;
+    position: relative;
+  }
+
+  .subscribeInput {
+    width: 100%;
+  }
+
+  .newsLetter p {
+    width: 100%;
+  }
+
+  .newsLetter {
+    padding-left: 0;
+  }
+
+  .homeTop {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background: #ffff;
+    display: flex !important;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2222;
+  }
+  .homeTop span {
+    margin-right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .navBar {
+    box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    position: fixed;
+    left: -250px;
+    top: 50px;
+    flex-direction: column;
+    width: 250px;
+    background-color: #fff;
+    height: 100%;
+    align-items: end;
+    justify-content: end;
+    z-index: 2222;
+  }
+  .navBar > li.active-link {
+    background-color: #212121;
+  }
+  .navBar > li {
+    display: block;
+    width: 100%;
+  }
+  .navBar > li a {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+  }
+  .navBar > li a:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .left-oblation {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  #oblation {
+    position: relative;
+    padding: 30px 0 130px 0;
+  }
+  #oblation:after {
+    background-size: cover;
+  }
+
+  .mainTop:after {
+    background: url(../img/maintop.png) no-repeat;
+    background-size: cover;
+    right: 0;
+  }
+
+  .joinUsButton {
+    margin-bottom: 25px;
+  }
+
+  .storiesHeader {
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+  }
+
+  .wordPeople {
+    top: -30px;
+  }
+
+  .newsLetter {
+    margin-bottom: 35px;
+  }
+
+  .footerLogo {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .lastButton {
+    margin-top: 25px;
+  }
+
+  .left-oblation h1 {
+    font-size: 22px;
+  }
+
+  .left-oblation {
+    width: 100%;
+  }
+  .left-oblation .textOblation {
+    margin-bottom: 25px;
+    font-size: 13px;
+  }
+
+  .dottedText {
+    height: 70px;
+  }
+
+  #oblation {
+    padding: 10px 0;
+  }
+  #oblation:after {
+    background-size: cover;
+  }
+
+  .mainTop:after {
+    content: "";
+    background: none;
+    right: 0;
+    background-color: #121212;
+    z-index: -1;
+  }
+
+  .joinUsButton {
+    margin-bottom: 25px;
+  }
+
+  .events {
+    padding: 45px 25px;
+  }
+  .events h1 {
+    font-size: 20px;
+  }
+  .events .textEvents {
+    font-size: 14px;
+  }
+
+  .success h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .success .successedText {
+    font-size: 14px;
+  }
+
+  .storiesHeader {
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+  }
+  .storiesHeader h1 {
+    font-size: 34px;
+  }
+
+  .eventsCol {
+    padding: 35px 0;
+  }
+
+  .wordPeople {
+    top: -20px;
+    padding: 45px 35px;
+  }
+
+  .buuts_swiper {
+    right: 10px;
+  }
+
+  .footerLogo {
+    margin-top: 35px;
+  }
+}
+/*___________________ Header end  _______________________*/
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapLeft:after, .commonWrapRight:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapLeft:before, .commonWrapRight:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addCharityComment, .formBottom .addButton, .addForum #addForumClick {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addCharityComment:hover, .formBottom .addButton:hover, .addForum #addForumClick:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .eventDescription .rightEventWrap .viewEvent, .commonInfo .contactInfo .closeModal, .addWorkForm .addWork, .searchWork {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .eventDescription .rightEventWrap .viewEvent:hover, .commonInfo .contactInfo .closeModal:hover, .addWorkForm .addWork:hover, .searchWork:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.addWorkForm select, .workForm input[type=text], .workForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.wayPath {
+  padding: 15px 0;
+  border-top: 1px solid #b1b1b1;
+  border-bottom: 1px solid #b1b1b1;
+  margin: 15px 0 35px;
+}
+.wayPath p a {
+  color: #b1b1b1;
+  position: relative;
+  text-decoration: none;
+}
+.wayPath p a:after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 1px;
+  background-color: #000;
+  height: 20px;
+  transform: rotate(15deg);
+}
+.wayPath p span {
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.ourAproach {
+  background-color: #c82f2f;
+  padding: 55px 35px;
+  color: #fff;
+}
+
+#heartBlock {
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 300px;
+}
+#heartBlock:after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/heart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  background-color: #212121;
+}
+
+.heartBg {
+  background-color: #212121;
+}
+
+.ourMission h2 {
+  font-size: 45px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.ourMission h2:after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background-color: #c82f2f;
+}
+.ourMission p {
+  font-size: 15px;
+  color: #b1b1b1;
+}
+
+.missionUl {
+  position: relative;
+  z-index: 2;
+  padding: 35px 45px;
+  margin-top: 25px;
+}
+.missionUl li {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+.missionUl li > span {
+  color: #fff;
+  padding-right: 20px;
+  font-size: 45px;
+  font-weight: 600;
+  border-right: 1px solid;
+  margin-right: 25px;
+}
+.missionUl li .rightSectionMission b {
+  color: #fff;
+  font-size: 20px;
+}
+.missionUl li .rightSectionMission span {
+  color: #b1b1b1;
+  font-family: sans-serif;
+  height: 70px;
+  display: block;
+  overflow: hidden;
+  font-size: 17px;
+}
+
+.headerMission {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 45px;
+  top: 250px;
+}
+
+.ourMissionWrap {
+  background: #fff;
+  padding: 75px 45px;
+  top: 270px;
+  position: relative;
+  z-index: 2;
+}
+.ourMissionWrap .textMission > p {
+  color: #b1b1b1;
+}
+.ourMissionWrap .textMission ul li {
+  color: #b1b1b1;
+  font-family: sans-serif;
+}
+.ourMissionWrap .textMission ul li span {
+  color: #c82f2f;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+#history {
+  position: relative;
+}
+#history:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  height: 100%;
+  width: 2px;
+  margin: auto;
+  top: 0;
+  z-index: -1;
+}
+
+.historyHeader {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 55px;
+}
+
+.commonWrapRight {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 25px;
+  position: relative;
+  width: calc(100% - 30px);
+  margin-left: auto;
+}
+.commonWrapRight:before {
+  left: -8px;
+  transform: rotate(0deg);
+}
+.commonWrapRight:after {
+  left: -6px;
+  transform: rotate(0deg);
+}
+.commonWrapRight .dateTop {
+  z-index: 22;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  right: auto;
+  left: -227px;
+  flex-direction: row-reverse;
+}
+.commonWrapRight .dateTop p {
+  font-family: sans-serif;
+  color: #b1b1b1;
+  margin-bottom: 0;
+}
+.commonWrapRight .dateTop > span {
+  margin: 0 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  font-size: 26px;
+  display: block;
+  text-align: center;
+  line-height: 45px;
+}
+.commonWrapRight h4 {
+  color: #c82f2f;
+  margin: 5px 0 25px;
+}
+.commonWrapRight p {
+  font-family: sans-serif;
+  color: #b1b1b1;
+  font-size: 17px;
+}
+
+.commonWrapLeft {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 25px;
+  position: relative;
+  width: calc(100% - 30px);
+  margin-right: auto;
+}
+.commonWrapLeft:before {
+  right: -8px;
+  transform: rotate(180deg);
+}
+.commonWrapLeft:after {
+  right: -6px;
+  transform: rotate(180deg);
+}
+.commonWrapLeft h4 {
+  color: #c82f2f;
+  margin: 5px 0 25px;
+}
+.commonWrapLeft p {
+  font-family: sans-serif;
+  color: #b1b1b1;
+  font-size: 17px;
+}
+.commonWrapLeft .dateTop {
+  z-index: 22;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  right: -227px;
+  left: auto;
+  flex-direction: row;
+}
+.commonWrapLeft .dateTop p {
+  font-family: sans-serif;
+  color: #b1b1b1;
+  margin-bottom: 0;
+}
+.commonWrapLeft .dateTop > span {
+  margin: 0 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  font-size: 26px;
+  display: block;
+  text-align: center;
+  line-height: 45px;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  #heartBlock {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .headerMission {
+    font-size: 45px;
+    top: -20px;
+    left: 30px;
+    margin-bottom: 25px;
+  }
+
+  .ourMissionWrap {
+    top: -20px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #heartBlock {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  #heartBlock::after {
+    background-image: none;
+  }
+
+  #history:after {
+    display: none;
+  }
+
+  .ourAproach {
+    margin-bottom: 25px;
+  }
+
+  .headerMission {
+    font-size: 45px;
+    top: -20px;
+    left: 15px;
+    margin-bottom: 25px;
+  }
+
+  .ourMissionWrap {
+    top: -20px;
+    left: 15px;
+  }
+
+  .commonWrapRight {
+    margin-bottom: 15px;
+  }
+  .commonWrapRight .dateTop {
+    left: -90px !important;
+  }
+
+  .commonWrapLeft {
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .commonWrapLeft .dateTop {
+    left: -90px !important;
+    width: 100%;
+  }
+  .commonWrapLeft:before {
+    right: auto;
+    left: -8px;
+    transform: rotate(0deg);
+  }
+  .commonWrapLeft:after {
+    right: auto;
+    left: -6px;
+    transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 576px) {
+  .commonWrapRight, .commonWrapLeft {
+    width: calc(100% - 70px);
+  }
+
+  .headerMission {
+    font-size: 20px;
+  }
+
+  .missionUl {
+    padding: 35px 25px;
+  }
+  .missionUl li > span {
+    font-size: 35px;
+  }
+
+  .ourMissionWrap {
+    top: -20px;
+    left: 7px;
+    padding: 25px 15px;
+    width: 100%;
+  }
+}
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addCharityComment, .formBottom .addButton, .addForum #addForumClick {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addCharityComment:hover, .formBottom .addButton:hover, .addForum #addForumClick:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .eventDescription .rightEventWrap .viewEvent, .commonInfo .contactInfo .closeModal, .addWorkForm .addWork, .searchWork {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .eventDescription .rightEventWrap .viewEvent:hover, .commonInfo .contactInfo .closeModal:hover, .addWorkForm .addWork:hover, .searchWork:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.addWorkForm select, .workForm input[type=text], .workForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.wayPath {
+  padding: 15px 0;
+  border-top: 1px solid #b1b1b1;
+  border-bottom: 1px solid #b1b1b1;
+  margin: 15px 0 35px;
+}
+.wayPath p a {
+  color: #b1b1b1;
+  position: relative;
+  text-decoration: none;
+}
+.wayPath p a:after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 1px;
+  background-color: #000;
+  height: 20px;
+  transform: rotate(15deg);
+}
+.wayPath p span {
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.stHeader {
+  font-size: 50px;
+}
+
+.commonStoriesBlock {
+  margin-top: 45px;
+}
+.commonStoriesBlock .dateSee {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+.commonStoriesBlock .dateSee p {
+  margin-bottom: 0;
+  font-family: sans-serif;
+  color: #aba4a0;
+  margin-right: 15px;
+  font-size: 14px;
+}
+.commonStoriesBlock .dateSee p span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.commonStoriesBlock .dateSee p a {
+  color: #aba4a0;
+}
+.commonStoriesBlock .storiesItemName {
+  margin: 25px 0;
+}
+.commonStoriesBlock .storiesItemName a {
+  text-decoration: none;
+  color: #c82f2f;
+}
+.commonStoriesBlock .descriptionStories {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #b1b1b1;
+}
+.commonStoriesBlock .hideAndShowComment {
+  display: none;
+}
+
+.pageinationStories {
+  margin-top: 45px;
+  text-align: center;
+  position: relative;
+}
+.pageinationStories .activePage {
+  color: #c82f2f;
+}
+.pageinationStories .disabledPage span {
+  color: #b78484;
+  cursor: default;
+}
+.pageinationStories a {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  color: #b1b1b1;
+  text-decoration: none;
+}
+.pageinationStories span {
+  color: #c82f2f;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .commonStoriesBlock > div {
+    flex-wrap: wrap;
+  }
+}
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addCharityComment, .formBottom .addButton, .addForum #addForumClick {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addCharityComment:hover, .formBottom .addButton:hover, .addForum #addForumClick:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .eventDescription .rightEventWrap .viewEvent, .commonInfo .contactInfo .closeModal, .addWorkForm .addWork, .searchWork {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .eventDescription .rightEventWrap .viewEvent:hover, .commonInfo .contactInfo .closeModal:hover, .addWorkForm .addWork:hover, .searchWork:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.addWorkForm select, .workForm input[type=text], .workForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.gallMore a {
+  margin: 0 25px 0 0;
+}
+.gallMore span {
+  margin-left: 5px !important;
+}
+
+.gallerySwiper .next_large, .gallerySwiper .prev_large {
+  background-color: rgba(200, 47, 46, 0.73);
+  width: 35px;
+  background-size: 60% !important;
+}
+
+.galleryContent > div a {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.galleryContent > div a:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 0.4s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.galleryContent > div a i:hover {
+  transform: rotate(90deg);
+}
+.galleryContent > div a i {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  bottom: 0;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+  color: #fff;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  font-size: 25px;
+  transition: 0.4s;
+}
+.galleryContent > div a:hover i, .galleryContent > div a span {
+  opacity: 1;
+}
+.galleryContent > div a:hover:after {
+  opacity: 1;
+}
+.galleryContent > div a:hover span {
+  opacity: 1;
+}
+.galleryContent > div a span {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 25px;
+  color: #fff;
+  margin: auto;
+  height: 25px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.pageinationGallery {
+  margin-top: 45px;
+  text-align: center;
+  position: relative;
+}
+.pageinationGallery .activePage {
+  color: #c82f2f;
+}
+.pageinationGallery .disabledPage span {
+  color: #b78484;
+  cursor: default;
+}
+.pageinationGallery a {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  color: #b1b1b1;
+  text-decoration: none;
+}
+.pageinationGallery span {
+  color: #c82f2f;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addCharityComment, .formBottom .addButton, .addForum #addForumClick {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addCharityComment:hover, .formBottom .addButton:hover, .addForum #addForumClick:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .eventDescription .rightEventWrap .viewEvent, .commonInfo .contactInfo .closeModal, .addWorkForm .addWork, .searchWork {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .eventDescription .rightEventWrap .viewEvent:hover, .commonInfo .contactInfo .closeModal:hover, .addWorkForm .addWork:hover, .searchWork:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.addWorkForm select, .workForm input[type=text], .workForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.afterForm:after {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2223;
+}
+
+.addForumForm {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 400px;
+  margin: auto;
+  z-index: 2224;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px -3px #ccc;
+  transition: 0.4s;
+  transform: scale(0.6);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.closeFormForum {
+  position: absolute;
+  right: 20px;
+  font-size: 25px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.twoWrap > div {
+  margin: 0 30px 0 0;
+  border-left: 4px solid #c82f2f;
+  padding-left: 15px;
+}
+.twoWrap > div p {
+  font-family: sans-serif;
+  color: #b1b1b1;
+}
+
+.addForum #addForumClick .ripple {
+  position: absolute;
+  animation-name: ripple;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transform-origin: center;
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.tableTh {
+  background: #c82f2f;
+  color: #fff;
+}
+.tableTh p {
+  padding: 14px 0 !important;
+}
+
+.tableTbody .trchild {
+  box-shadow: 0px 4px 2px -3px #ccc;
+}
+.tableTbody .trchild p {
+  position: relative;
+}
+.tableTbody .trchild p:first-child:after {
+  display: none;
+}
+.tableTbody .trchild p:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  height: 25px;
+  width: 1px;
+  background-color: #b1b1b1;
+}
+
+.trchild {
+  display: flex;
+  justify-content: space-between;
+}
+.trchild p {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+.trchild p span.lnr {
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 15px;
+}
+.trchild p a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #000;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.trchild p a img {
+  display: inline-block;
+  margin-right: 15px;
+}
+.trchild p:nth-child(1) {
+  width: 40%;
+}
+.trchild p:nth-child(2) {
+  width: 20%;
+}
+.trchild p:nth-child(3) {
+  width: 20%;
+}
+.trchild p:nth-child(4) {
+  width: 20%;
+}
+
+.formBottom {
+  padding-top: 30px;
+  text-align: right;
+}
+.formBottom .closeButton {
+  border: 1px solid #ccc;
+  background: none;
+  padding: 4px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.formBottom .closeButton:hover {
+  background-color: #b1b1b1;
+  color: #fff;
+}
+
+.labelTop {
+  position: relative;
+  margin-top: 23px;
+}
+.labelTop label {
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  color: #b1b1b1;
+  cursor: auto;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .tableTbody .trchild p:nth-child(1), .tableTbody .trchild p:nth-child(4) {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tableForum {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .trchild {
+    width: 800px;
+  }
+
+  .addForumForm {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tableTbody .trchild p:nth-child(1), .tableTbody .trchild p:nth-child(4) {
+    font-size: 13px;
+  }
+
+  .tableTh.trchild {
+    font-size: 13px;
+  }
+
+  .trchild {
+    width: 600px;
+  }
+
+  .twoWrap > div {
+    margin-bottom: 15px;
+  }
+}
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addCharityComment, .addForum #addForumClick, .formBottom .addButton {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addCharityComment:hover, .addForum #addForumClick:hover, .formBottom .addButton:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .eventDescription .rightEventWrap .viewEvent, .commonInfo .contactInfo .closeModal, .addWorkForm .addWork, .searchWork {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .eventDescription .rightEventWrap .viewEvent:hover, .commonInfo .contactInfo .closeModal:hover, .addWorkForm .addWork:hover, .searchWork:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.addWorkForm select, .workForm input[type=text], .workForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.workSection h5 {
+  margin-bottom: 0;
+  background: #c82f2f;
+  color: #fff;
+  padding: 10px;
+  font-size: 17px;
+}
+.workSection .addWorkButton {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  width: 100%;
+  margin-top: 30px;
+  padding: 5px 10px;
+  text-align: left;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.workForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff;
+  padding: 15px;
+}
+.workForm label {
+  margin-bottom: 0;
+  position: relative;
+  top: 13px;
+}
+.searchWork {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.wrapDest {
+  margin-bottom: 20px;
+}
+.wrapDest:hover > span:after {
+  width: 110px;
+}
+.wrapDest > span {
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+  position: relative;
+}
+.wrapDest > span:after {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 75px;
+  height: 2px;
+  background-color: #c82f2f;
+  margin: auto;
+  bottom: -5px;
+}
+.wrapDest .categWrap {
+  border: 1px solid #d0d3d6;
+  padding: 10px;
+  position: relative;
+}
+.wrapDest .categWrap:hover span {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1);
+}
+.wrapDest .categWrap span {
+  font-size: 30px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+  background-color: #c82f2e73;
+  color: #fff;
+  transform: rotateY(-230deg) scale(0.5);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.telBlock {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 2px;
+  background: #fff;
+  margin-top: 15px;
+  position: relative;
+}
+.telBlock input:focus {
+  outline: none;
+}
+.telBlock input {
+  width: calc(100% - 40px);
+  border: none;
+  padding-left: 5px;
+}
+
+.error-msg-job, .error-msg-job2 {
+  color: #a94442;
+  font-size: 13px;
+}
+
+.valid-msg-job, .valid-msg-job2 {
+  color: #18bc9c;
+  font-size: 13px;
+}
+
+.addWorkWrap {
+  display: none;
+}
+
+.addWorkForm {
+  padding: 1px 15px 15px;
+  background-color: #fff;
+}
+.addWorkForm > input, .addWorkForm > textarea {
+  width: 100%;
+  margin-top: 15px;
+  display: block;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.addWorkForm .addWork {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.addWorkForm .file-label {
+  align-items: stretch;
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+.addWorkForm .file-input {
+  height: 0.01em;
+  left: 0;
+  outline: 0;
+  position: absolute;
+  top: 0;
+  width: 0.01em;
+  margin-top: 15px;
+}
+.addWorkForm .file-cta, .addWorkForm .file-name {
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-shadow: none;
+  display: inline-flex;
+  height: 2.25em;
+  width: 100%;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(.375em - 1px);
+  padding-top: calc(.375em - 1px);
+  position: relative;
+  vertical-align: top;
+  font-size: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  color: #4a4a4a;
+  margin-top: 15px;
+}
+.addWorkForm .file-icon {
+  align-items: center;
+  display: flex;
+  height: 1em;
+  justify-content: center;
+  margin-right: 0.5em;
+  width: 1em;
+}
+.addWorkForm .file-icon .lnr {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.addWorkForm .file-label {
+  align-items: stretch;
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addCharityComment, .addForum #addForumClick, .formBottom .addButton {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addCharityComment:hover, .addForum #addForumClick:hover, .formBottom .addButton:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .eventDescription .rightEventWrap .viewEvent, .commonInfo .contactInfo .closeModal, .searchWork, .addWorkForm .addWork {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .eventDescription .rightEventWrap .viewEvent:hover, .commonInfo .contactInfo .closeModal:hover, .searchWork:hover, .addWorkForm .addWork:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.workForm input[type=text], .workForm select, .addWorkForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.comeBack {
+  display: inline-block;
+  color: #c82f2f;
+  padding: 5px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+.comeBack:hover {
+  color: #c82f2f;
+  text-decoration: none;
+}
+
+.jobsCategories {
+  box-shadow: 0px 3px 8px -1px #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.imgWrapJob {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.jobDescriptionWrap {
+  width: calc(100% - 200px);
+  padding: 15px;
+}
+.jobDescriptionWrap h5 {
+  position: relative;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.jobDescriptionWrap h5:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 55px;
+  height: 2px;
+  background-color: #c82f2f;
+}
+.jobDescriptionWrap .description p {
+  height: 100px;
+  overflow: hidden;
+}
+.jobDescriptionWrap .description #jobMoreShow {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  width: 150px;
+  margin-left: auto;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.jobDescriptionWrap .description #jobMoreShow:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.commonInfo {
+  width: 60%;
+  max-width: 900px;
+  background-color: #fff;
+  padding: 15px;
+  margin: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2224;
+}
+.commonInfo .imgBlockModal img {
+  max-width: 250px;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+.commonInfo .imgBlockModal .descriptionModal {
+  padding: 0 15px;
+}
+.commonInfo .imgBlockModal .descriptionModal p:last-child {
+  font-size: 14px;
+  padding: 10px;
+  box-shadow: 0px 5px 5px -4px #ccc;
+}
+.commonInfo .contactInfo h5 {
+  margin: 15px 0;
+}
+.commonInfo .contactInfo ul {
+  padding-left: 15px;
+}
+.commonInfo .contactInfo ul li {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #717070;
+}
+.commonInfo .contactInfo ul li span:first-child {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.commonInfo .contactInfo ul li p {
+  display: flex;
+  flex-direction: column;
+}
+.commonInfo .contactInfo ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #717070;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.commonInfo .contactInfo ul li a:Hover {
+  color: #c82f2f;
+}
+.commonInfo .contactInfo .closeModal {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  width: 120px !important;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .imgWrapJob {
+    width: 150px;
+  }
+
+  .jobDescriptionWrap {
+    width: calc(100% - 150px);
+  }
+  .jobDescriptionWrap .description p {
+    height: 80px;
+    font-size: 13px;
+  }
+
+  .commonInfo {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .jobDescriptionWrap .description p {
+    height: 80px;
+    font-size: 13px;
+  }
+
+  .commonInfo {
+    width: 90%;
+  }
+  .commonInfo .imgBlockModal img {
+    margin: auto;
+  }
+  .commonInfo .imgBlockModal .descriptionModal {
+    padding: 0 15px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .commonInfo .imgBlockModal .descriptionModal p:last-child {
+    font-size: 13px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px -4px #ccc;
+    max-height: 200px;
+    overflow-x: hidden;
+  }
+  .commonInfo .contactInfo .closeModal {
+    position: static;
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .imgWrapJob {
+    margin: auto;
+  }
+
+  .jobDescriptionWrap {
+    width: 100%;
+    text-align: center;
+  }
+  .jobDescriptionWrap h5:after {
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  .jobDescriptionWrap .description #jobMoreShow {
+    margin: auto;
+  }
+}
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addCharityComment, .addForum #addForumClick, .formBottom .addButton {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addCharityComment:hover, .addForum #addForumClick:hover, .formBottom .addButton:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .eventDescription .rightEventWrap .viewEvent, .searchWork, .addWorkForm .addWork, .commonInfo .contactInfo .closeModal {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .eventDescription .rightEventWrap .viewEvent:hover, .searchWork:hover, .addWorkForm .addWork:hover, .commonInfo .contactInfo .closeModal:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.workForm input[type=text], .workForm select, .addWorkForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.charitySlider .next_large, .charitySlider .prev_large {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 35px;
+  background-size: 60% !important;
+}
+
+.charitySliderThumb .thumb_slide_item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.telHelp {
+  display: flex;
+  padding: 0;
+}
+.telHelp li {
+  margin-right: 15px;
+}
+.telHelp li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #717070;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.telHelp li a:Hover {
+  color: #c82f2f;
+}
+
+.datePublication {
+  font-size: 14px;
+  float: right;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  width: calc(100% - 30px);
+}
+.datePublication p {
+  margin-bottom: 0;
+}
+
+.commentNone {
+  visibility: hidden;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.bgWhiteCharity {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.userBlock {
+  box-shadow: 0px 3px 4px -3px #ccc;
+  margin-top: 15px;
+}
+
+.addCharityComment {
+  margin-top: 15px;
+  margin-left: auto;
+  display: block;
+}
+
+.commentUser {
+  font-family: sans-serif;
+  padding-left: 15px;
+}
+.commentUser p {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .telHelp {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .charityDescripition p {
+    word-break: break-word;
+  }
+  .charityDescripition .telHelp {
+    display: flex;
+    flex-direction: column;
+  }
+  .charityDescripition .datePublication {
+    position: static;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .commentNone h4 {
+    font-size: 20px;
+  }
+}
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addForum #addForumClick, .formBottom .addButton, .addCharityComment {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addForum #addForumClick:hover, .formBottom .addButton:hover, .addCharityComment:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .eventDescription .rightEventWrap .viewEvent, .searchWork, .addWorkForm .addWork, .commonInfo .contactInfo .closeModal {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .eventDescription .rightEventWrap .viewEvent:hover, .searchWork:hover, .addWorkForm .addWork:hover, .commonInfo .contactInfo .closeModal:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.workForm input[type=text], .workForm select, .addWorkForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.videoSwiper .next_large, .videoSwiper .prev_large {
+  background-color: rgba(200, 47, 46, 0.73);
+  width: 35px;
+  background-size: 60% !important;
+}
+
+.videoContent > div a {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+  overflow: hidden;
+  height: 250px;
+}
+.videoContent > div a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.4s;
+}
+.videoContent > div a:hover:after {
+  opacity: 1;
+}
+.videoContent > div a:hover img {
+  opacity: 1;
+}
+.videoContent img {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  bottom: 0;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 25px;
+  color: #fff;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  font-size: 25px;
+  transition: 0.4s;
+}
+
+.fancyVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2225;
+}
+.fancyVideo .topPanelFancy {
+  padding: 10px 0;
+  height: 70px;
+  background-color: black;
+}
+
+.fancyIframe {
+  width: 60%;
+  margin: auto;
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.fancyIframe .preloaderVideo {
+  max-width: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.closeFancy {
+  position: absolute;
+  right: 10px;
+  display: block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border: 1px solid #fff;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.middleButtons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  color: #fff;
+}
+.middleButtons > span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  line-height: 27px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.middleButtons .pageCount {
+  margin: 0 10px;
+}
+.middleButtons .pageCount > span {
+  margin: 0 5px;
+  display: inline-block;
+}
+.middleButtons .pageCount .activeCount {
+  position: relative;
+}
+.middleButtons .pageCount .activeCount:after {
+  content: "/";
+  position: relative;
+  top: 0;
+  right: -8px;
+}
+
+@media screen and (max-width: 576px) {
+  .fancyIframe {
+    width: 90%;
+  }
+}
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addForum #addForumClick, .formBottom .addButton, .addCharityComment {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addForum #addForumClick:hover, .formBottom .addButton:hover, .addCharityComment:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .eventDescription .rightEventWrap .viewEvent, .searchWork, .addWorkForm .addWork, .commonInfo .contactInfo .closeModal {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .eventDescription .rightEventWrap .viewEvent:hover, .searchWork:hover, .addWorkForm .addWork:hover, .commonInfo .contactInfo .closeModal:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.workForm input[type=text], .workForm select, .addWorkForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.eventBlock {
+  position: relative;
+}
+.eventBlock .eventDay {
+  position: absolute;
+  z-index: 2;
+  left: -7px;
+  color: #fff;
+  background-color: #c82f2e;
+  padding: 5px 10px;
+  top: 20px;
+}
+.eventBlock .eventDay:after {
+  content: "";
+  position: absolute;
+  top: 98%;
+  border-bottom: 6px solid transparent;
+  left: 0px;
+  border-right: 7px solid #c82f2e;
+}
+
+.eventDescription {
+  display: flex;
+  align-items: start;
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0px 4px 7px -1px #ccc;
+  margin-bottom: 20px;
+}
+.eventDescription .rightEventWrap h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.eventDescription .rightEventWrap .locationEvent {
+  color: #c82f2f;
+  margin-bottom: 10px;
+}
+.eventDescription img {
+  max-width: 250px;
+  margin-top: 55px;
+}
+.eventDescription .rightEventWrap {
+  padding: 0 15px;
+}
+.eventDescription .rightEventWrap .eventShort {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.eventDescription .rightEventWrap .viewEvent {
+  width: 130px !important;
+  float: right;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.eventDescription .rightEventWrap .viewEvent:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+  .eventDescription {
+    flex-direction: column;
+  }
+  .eventDescription img {
+    margin: 55px auto 10px;
+  }
+  .eventDescription .rightEventWrap {
+    text-align: center;
+  }
+}
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addForum #addForumClick, .formBottom .addButton, .addCharityComment {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addForum #addForumClick:hover, .formBottom .addButton:hover, .addCharityComment:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .searchWork, .addWorkForm .addWork, .commonInfo .contactInfo .closeModal, .eventDescription .rightEventWrap .viewEvent {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .searchWork:hover, .addWorkForm .addWork:hover, .commonInfo .contactInfo .closeModal:hover, .eventDescription .rightEventWrap .viewEvent:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.workForm input[type=text], .workForm select, .addWorkForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.eventsMoreShort a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #717070;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.eventsMoreShort a:hover {
+  color: #c82f2f;
+}
+
+.eventsMore {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 3px 7px 0px #ccc;
+}
+.eventsMore img {
+  padding: 15px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 15px;
+  max-width: 350px;
+}
+.eventsMore .locationEvent {
+  color: #c82f2f;
+  margin-bottom: 10px;
+}
+.eventsMore .eventClock {
+  margin-bottom: 10px;
+}
+.eventsMore .interestedBlock {
+  display: flex;
+  align-items: center;
+}
+.eventsMore .interestedBlock > div {
+  margin: 0 15px;
+  font-size: 12px;
+}
+.eventsMore .interestedBlock > div span.lnr {
+  margin-right: 7px;
+  display: inline-block;
+}
+.eventsMore .interestedBlock > div span:first-child {
+  font-size: 17px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  background-color: #c82f2e;
+  border-radius: 50%;
+  color: #fff;
+  margin-bottom: 5px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+}
+.eventsMore .interestedBlock > div span:first-child:hover:after {
+  opacity: 1;
+}
+.eventsMore .interestedBlock > div span:first-child:after {
+  content: attr(data-plus);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 22;
+  margin: auto;
+  font-size: 20px;
+  opacity: 0;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  background: #c82f2f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.contactSubject {
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 10px;
+  box-shadow: 0px 3px 7px 0px #ccc;
+}
+.contactSubject .contactSec {
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .eventsMore img {
+    margin: 0 auto 15px;
+    float: inherit;
+    display: block;
+    width: 100%;
+  }
+  .eventsMore .interestedBlock {
+    flex-direction: column;
+  }
+  .eventsMore .interestedBlock > div {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tabParticipant > ul li a {
+    font-size: 13px;
+  }
+
+  .tabContentBar ul li {
+    font-size: 14px;
+  }
+}
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addForum #addForumClick, .formBottom .addButton, .addCharityComment {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addForum #addForumClick:hover, .formBottom .addButton:hover, .addCharityComment:hover {
+  background-color: #000;
+}
+
+.commonInfoDonate .contactInfoDonate .closeModalDonate, .searchWork, .addWorkForm .addWork, .commonInfo .contactInfo .closeModal, .eventDescription .rightEventWrap .viewEvent {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate:hover, .searchWork:hover, .addWorkForm .addWork:hover, .commonInfo .contactInfo .closeModal:hover, .eventDescription .rightEventWrap .viewEvent:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.workForm input[type=text], .workForm select, .addWorkForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.categDonate {
+  background-color: #fff;
+}
+.categDonate a {
+  display: block;
+  padding: 7px;
+  color: #212121;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px -2px #ccc;
+}
+.categDonate a:hover {
+  transform: translateX(5px);
+  text-decoration: none;
+}
+
+.donateBadge a {
+  display: block;
+  position: relative;
+  height: 270px;
+  overflow: hidden;
+}
+.donateBadge a .desc_href {
+  position: absolute;
+  transition: 0.3s;
+  width: 90%;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+.donateBadge a .desc_href h4 {
+  font-size: 15px;
+  margin: 5px auto;
+  height: 20px;
+  overflow: hidden;
+  text-align: center;
+  color: #4B4345;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.donateBadge a .desc_href p::-webkit-scrollbar {
+  width: 2px;
+}
+.donateBadge a .desc_href p::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 5px;
+}
+.donateBadge a .desc_href p::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #fff;
+  border-radius: 5px;
+}
+.donateBadge a .desc_href p {
+  transition-delay: 1s;
+  transition: 0.3s;
+  color: #4B4345;
+  font-size: 12px;
+  margin: 0;
+  height: 10px;
+  padding: 0 10px;
+  overflow: hidden;
+  text-align: center;
+  opacity: 0;
+}
+.donateBadge a .desc_href p:hover::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #c82f2f !important;
+}
+.donateBadge a .desc_href p:hover::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #c82f2f;
+  border-radius: 5px;
+}
+.donateBadge a img {
+  transition: 0.4s;
+}
+.donateBadge a:hover img {
+  filter: blur(2px);
+  overflow: hidden;
+}
+.donateBadge a:hover .desc_href p {
+  height: 60px;
+  opacity: 1;
+  overflow-x: hidden;
+  overflow: auto;
+}
+
+.commonInfoDonate {
+  width: 60%;
+  max-width: 900px;
+  background-color: #fff;
+  padding: 15px;
+  margin: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2224;
+}
+.commonInfoDonate .imgBlockModalDonate .swiperSliderDoante {
+  max-width: 250px;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+.commonInfoDonate .imgBlockModalDonate .swiperSliderDoante .thumb_slide_item {
+  padding: 5px !important;
+}
+.commonInfoDonate .imgBlockModalDonate .descriptionModalDonate {
+  padding: 0 15px;
+}
+.commonInfoDonate .imgBlockModalDonate .descriptionModalDonate p:last-child {
+  font-size: 14px;
+  padding: 10px;
+  box-shadow: 0px 5px 5px -4px #ccc;
+  max-height: 300px;
+  overflow-x: hidden;
+}
+.commonInfoDonate .imgBlockModalDonate .descriptionModalDonate :last-child::-webkit-scrollbar {
+  width: 2px;
+}
+.commonInfoDonate .imgBlockModalDonate .descriptionModalDonate :last-child::-webkit-scrollbar-thumb {
+  background-color: #c82f2f;
+  border-radius: 5px;
+}
+.commonInfoDonate .imgBlockModalDonate .descriptionModalDonate :last-child::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #c82f2f;
+  border-radius: 5px;
+}
+.commonInfoDonate .contactInfoDonate h5 {
+  margin: 15px 0;
+}
+.commonInfoDonate .contactInfoDonate ul {
+  padding-left: 15px;
+}
+.commonInfoDonate .contactInfoDonate ul li {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #717070;
+}
+.commonInfoDonate .contactInfoDonate ul li span:first-child {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.commonInfoDonate .contactInfoDonate ul li p {
+  display: flex;
+  flex-direction: column;
+}
+.commonInfoDonate .contactInfoDonate ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #717070;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.commonInfoDonate .contactInfoDonate ul li a:Hover {
+  color: #c82f2f;
+}
+.commonInfoDonate .contactInfoDonate .closeModalDonate {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  width: 120px !important;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  .donateBadge a {
+    height: 240px;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .donateBadge a {
+    height: 240px;
+  }
+
+  .commonInfoDonate {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .donateBadge a {
+    height: auto;
+    margin-bottom: 40px;
+    overflow: inherit;
+  }
+  .donateBadge a .desc_href {
+    bottom: -15px;
+  }
+
+  .commonInfoDonate {
+    width: 90%;
+  }
+  .commonInfoDonate .imgBlockModalDonate .swiperSliderDoante {
+    margin: auto;
+  }
+  .commonInfoDonate .imgBlockModalDonate .descriptionModalDonate {
+    padding: 0 15px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .commonInfoDonate .imgBlockModalDonate .descriptionModalDonate p:last-child {
+    font-size: 13px;
+    padding: 10px;
+    box-shadow: 0px 5px 5px -4px #ccc;
+    max-height: 200px;
+    overflow-x: hidden;
+  }
+  .commonInfoDonate .contactInfoDonate .closeModalDonate {
+    position: static;
+    bottom: 20px;
+  }
+}
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addForum #addForumClick, .formBottom .addButton, .addCharityComment {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addForum #addForumClick:hover, .formBottom .addButton:hover, .addCharityComment:hover {
+  background-color: #000;
+}
+
+.searchWork, .addWorkForm .addWork, .commonInfo .contactInfo .closeModal, .eventDescription .rightEventWrap .viewEvent, .commonInfoDonate .contactInfoDonate .closeModalDonate {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.searchWork:hover, .addWorkForm .addWork:hover, .commonInfo .contactInfo .closeModal:hover, .eventDescription .rightEventWrap .viewEvent:hover, .commonInfoDonate .contactInfoDonate .closeModalDonate:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.workForm input[type=text], .workForm select, .addWorkForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.termsBlock {
+  padding: 20px 20px 20px 30px;
+  background-color: #fff;
+}
+.termsBlock li {
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addForum #addForumClick, .formBottom .addButton, .addCharityComment {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addForum #addForumClick:hover, .formBottom .addButton:hover, .addCharityComment:hover {
+  background-color: #000;
+}
+
+.searchWork, .addWorkForm .addWork, .commonInfo .contactInfo .closeModal, .eventDescription .rightEventWrap .viewEvent, .commonInfoDonate .contactInfoDonate .closeModalDonate {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.searchWork:hover, .addWorkForm .addWork:hover, .commonInfo .contactInfo .closeModal:hover, .eventDescription .rightEventWrap .viewEvent:hover, .commonInfoDonate .contactInfoDonate .closeModalDonate:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.workForm input[type=text], .workForm select, .addWorkForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.resetNav {
+  padding: 10px;
+  background-color: #fff;
+}
+.resetNav img {
+  max-width: 60px;
+}
+
+.contentReset {
+  background-color: #fff;
+  margin-top: 35px;
+  padding: 45px;
+}
+
+.lastButton > img, .left-oblation > a span:last-child, .joinUsButton > span, .eventsButton > span, .successedButton > span, .reportButton > span:first-child, .suscribeButton > span {
+  padding: 10px;
+  box-shadow: -2px 0px 1px -2px #fff;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+  padding: 12px 12px 13px 15px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #c82f2f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.commonWrapRight:after, .commonWrapLeft:after {
+  position: absolute;
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #eee;
+  border-bottom: 6px solid transparent;
+  top: 45px;
+  content: "";
+}
+
+.commonWrapRight:before, .commonWrapLeft:before {
+  position: absolute;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #eee;
+  border-bottom: 7px solid transparent;
+  border-right-color: #dee2e6;
+  top: 45px;
+  content: "";
+}
+
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment, .addForum #addForumClick, .formBottom .addButton, .addCharityComment {
+  background: #c82f2f;
+  color: #fff;
+  border: none;
+  padding: 5px 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment:hover, .addForum #addForumClick:hover, .formBottom .addButton:hover, .addCharityComment:hover {
+  background-color: #000;
+}
+
+.searchWork, .addWorkForm .addWork, .commonInfo .contactInfo .closeModal, .eventDescription .rightEventWrap .viewEvent, .commonInfoDonate .contactInfoDonate .closeModalDonate {
+  background: #c82f2f;
+  border: 1px solid transparent;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+.searchWork:hover, .addWorkForm .addWork:hover, .commonInfo .contactInfo .closeModal:hover, .eventDescription .rightEventWrap .viewEvent:hover, .commonInfoDonate .contactInfoDonate .closeModalDonate:hover {
+  background-color: #fff;
+  color: #c82f2f;
+  border: 1px solid #c82f2f;
+}
+
+.contactSubject h4 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contactSubject h4::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #c82f2f;
+}
+
+.loginForm #loginForma input, .registerForm #registerForma input:not(.notSelect) {
+  background: #f4efec;
+  border: none;
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b1b1b1;
+  padding: 10px 14px;
+  width: 100% !important;
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: auto;
+  border: 1px solid #fafafa;
+  outline: none;
+}
+.loginForm #loginForma input:focus, .registerForm #registerForma input:focus:not(.notSelect) {
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.loginForm #loginForma .loginButton, .registerForm #registerForma .loginButton {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: #c82f2f;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 7px 19px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 8px 0;
+}
+.loginForm #loginForma .loginButton:hover, .registerForm #registerForma .loginButton:hover {
+  background-color: #212121;
+}
+
+.workForm input[type=text], .workForm select, .addWorkForm select {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 6px;
+  background-color: #fff;
+  color: #757575;
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .lastButton, .joinUsButton, .eventsButton, .successedButton, .reportButton, .suscribeButton {
+    padding: 7px 5px 7px 5px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #c82f2f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+}
+.commentsWrap > h4 {
+  text-align: center;
+  padding: 15px;
+  background: #c82f2f;
+  color: #fff;
+  font-size: 30px;
+}
+.commentsWrap .subCommentsUser {
+  display: flex;
+  align-items: start;
+}
+.commentsWrap .subCommentsUser img {
+  margin-right: 15px;
+}
+.commentsWrap .subCommentsUser .bottomLikes {
+  display: flex;
+  align-items: center;
+}
+.commentsWrap .subCommentsUser .bottomLikes .likePut {
+  color: #26a920;
+  cursor: pointer;
+}
+.commentsWrap .subCommentsUser .bottomLikes .dislikePut {
+  cursor: pointer;
+  color: #c82f2f;
+}
+.commentsWrap .subCommentsUser .bottomLikes p:last-child {
+  font-size: 14px;
+}
+.commentsWrap .subCommentsUser .bottomLikes p {
+  margin-right: 10px;
+}
+.commentsWrap .writeUser {
+  display: flex;
+  padding: 10px;
+  box-shadow: 0px 6px 12px -4px #ccc;
+}
+.commentsWrap .writeUser .userComment {
+  width: calc(100% - 200px);
+}
+.commentsWrap .writeUser .userComment > p {
+  min-height: 80px;
+  box-shadow: 0px 6px 5px -5px #ccc;
+}
+.commentsWrap .writeUser .userComment .addSubCommentForm .addSubComment {
+  margin-top: 10px;
+  margin-left: auto;
+  display: block;
+}
+.commentsWrap .writeUser .userSection {
+  width: 200px;
+}
+.commentsWrap .writeUser .userSection > span {
+  font-size: 13px;
+}
+.commentsWrap .writeUser .userSection p img {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .userSection {
+    width: 160px !important;
+  }
+
+  .userComment {
+    width: calc(100% - 160px) !important;
+  }
+  .userComment p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .commentsWrap > h4 {
+    font-size: 20px;
+  }
+  .commentsWrap .writeUser {
+    display: flex;
+    padding: 10px;
+    box-shadow: 0px 6px 12px -4px #ccc;
+    flex-direction: column;
+  }
+  .commentsWrap .writeUser .userSection {
+    width: 100%;
+  }
+  .commentsWrap .writeUser .userSection p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .commentsWrap .writeUser .userSection > span {
+    font-size: 12px;
+    text-align: center;
+  }
+  .commentsWrap .writeUser .userComment {
+    width: 100%;
+    font-size: 13px;
+  }
+  .commentsWrap .writeUser .userComment .subCommentsUser .bottomLikes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@font-face {
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-family: slack;
+}
+@font-face {
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-family: slack-bold;
+}
+body {
+  font-family: slack;
+  background-color: #f3eeeb;
+}
+
+body.afterForm {
+  overflow: hidden !important;
+}
+
+.afterbg {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 26;
+}
+
+.data-animate {
+  opacity: 0;
+}
+
+.childrenAnimate {
+  position: relative;
+  top: -40px;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .gallMore p {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

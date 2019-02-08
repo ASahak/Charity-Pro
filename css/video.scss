@@ -1,0 +1,155 @@
+
+@import './mixins';
+@import './extends';
+
+@import './variables';
+
+
+.videoSwiper{
+    .next_large, .prev_large{
+        background-color: rgba(200, 47, 46, 0.73);
+        width: 35px;
+        background-size: 60% !important;
+    }
+}
+.videoContent{
+    > div a{
+        position: relative;
+        display: block;
+        margin-bottom: 25px;
+        overflow: hidden;
+        height: 250px;
+        &:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            opacity: 0;
+            transition: .4s;
+        }
+        &:hover:after{
+            opacity: 1;
+        }
+        &:hover img{
+            opacity: 1;
+        }
+    }
+    img{
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        bottom: 0;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        line-height:25px;
+        color: $globalColorWhite;
+        margin: auto;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        font-size: 25px;
+        transition: .4s;
+    }
+}
+
+// Video FancyBox
+
+.fancyVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2225;
+    .topPanelFancy {
+        padding: 10px 0;
+        height: 70px;
+        background-color: rgba(0,0,0,1);
+    }
+}
+.fancyIframe {
+    width: 60%;
+    margin: auto;
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .preloaderVideo{
+        max-width: 70px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+.closeFancy {
+    position: absolute;
+    right: 10px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid $globalColorWhite;
+    font-size: 24px;
+    color: $globalColorWhite;
+    cursor: pointer;
+}
+.middleButtons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    color:$globalColorWhite;
+
+    >span{
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $globalColorWhite;
+        line-height: 27px;
+        text-align: center;
+        color: $globalColorWhite;
+        cursor: pointer;
+    }
+    .pageCount{
+        margin: 0 10px;
+        > span{
+            margin: 0 5px;
+            display: inline-block;
+        }
+        .activeCount{
+            position: relative;
+            &:after{
+                content: "/";
+                position: relative;
+                top: 0;
+                right: -8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    .fancyIframe{
+        width:90%;
+    }
+}
+
+// Video FancyBox

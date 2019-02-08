@@ -1,0 +1,133 @@
+@import './mixins';
+@import './extends';
+
+@import './variables';
+
+
+.eventsMoreShort{
+    a{
+
+        font-size: 14px;
+        text-decoration: none;
+        color: #717070;
+        @include transition(pointer);
+        &:hover{
+            color: $globalColorRed
+        }
+    }
+}
+.eventsMore{
+    padding: 10px;
+    background-color: $globalColorWhite;
+    box-shadow: 0px 3px 7px 0px #ccc;
+    img{
+        padding: 15px;
+        border: 1px solid #ccc;
+        float: left;
+        margin-right: 15px;
+        max-width: 350px;
+    }
+    .locationEvent{
+        color:$globalColorRed;
+        margin-bottom: 10px;
+    }
+    .eventClock{
+        margin-bottom: 10px;
+    }
+    .interestedBlock {
+        display: flex;
+        align-items: center;
+        > div{
+            margin: 0 15px;
+            font-size: 12px;
+            span.lnr{
+                margin-right: 7px;
+                display: inline-block;
+            }
+            span:first-child{
+                &:hover:after{
+                    opacity: 1;
+                }
+                &:after{
+                    content: attr(data-plus);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 22;
+                    margin: auto;
+                    font-size: 20px;
+                    opacity: 0;
+                    transition: 0.4s;
+                    width: 100%;
+                    height: 100%;
+                    background: $globalColorRed;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                font-size: 17px;
+                width: 50px;
+                height: 50px;
+                display: block;
+                margin: auto;
+                background-color: #c82f2e;
+                border-radius: 50%;
+                color: #fff;
+                margin-bottom: 5px;
+                line-height:50px;
+                text-align: center;
+                position: relative;
+            }
+        }
+    }
+}
+.contactSubject {
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+    box-shadow: 0px 3px 7px 0px #ccc;
+    h4{
+        @extend %extend-titleH4;
+    }
+    .contactSec{
+        font-family: sans-serif;
+    }
+}
+
+@media screen and (max-width:767px){
+    .eventsMore{
+        img{
+            margin: 0 auto 15px;
+            float: inherit;
+            display: block;
+            width: 100%;
+        }
+        .interestedBlock{
+            flex-direction: column;
+            > div{
+                margin-bottom: 15px;
+                
+            }
+        }
+    } 
+    
+}
+@media screen and (max-width:576px){
+    .tabParticipant{
+        >ul{
+            li{
+                a{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .tabContentBar{
+        
+        ul{
+            li{
+                font-size: 14px;
+            }
+        }
+    }
+}

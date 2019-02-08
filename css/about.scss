@@ -1,0 +1,335 @@
+@import './mixins';
+@import './extends';
+
+@import './variables';
+
+.wayPath{
+    padding: 15px 0;
+    border-top: 1px solid $globalColorGrey;
+    border-bottom: 1px solid $globalColorGrey;
+    margin: 15px 0 35px;
+    p{
+        a{
+            color:$globalColorGrey;
+            position: relative;
+            text-decoration: none;
+            &:after{
+                content: "";
+                position: absolute;
+                right: -15px;
+                top: 0;
+                width: 1px;
+                background-color: #000;
+                height: 20px;
+                transform: rotate(15deg)
+            } 
+        }
+        span{   
+            margin-left: 25px;
+            display: inline-block;
+        }
+    }
+}
+.ourAproach{
+    background-color: $globalColorRed;
+    padding: 55px 35px;
+    color: $globalColorWhite;
+}
+#heartBlock{
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 300px;
+    &:after{
+        position: absolute;
+        content: "";
+        background-image: url(../img/heart.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        top: 0; 
+        z-index:0;
+        background-color: #212121;
+    }
+}
+.heartBg{
+    background-color: #212121;
+}
+.ourMission{
+    h2{
+        font-size: 45px;
+        position: relative;
+        margin-bottom: 25px;
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left:0;
+            width: 100px;
+            height: 3px;
+            background-color: $globalColorRed
+        }
+    }
+    p{
+        font-size: 15px;
+        color: $globalColorGrey;
+    }
+}
+.missionUl{
+    position: relative;
+    z-index: 2;
+    padding: 35px 45px;
+    margin-top: 25px;
+    li{
+        display: flex;
+        align-items: flex-start;
+        padding: 10px 0;
+        > span{
+            color: $globalColorWhite;
+            padding-right: 20px;
+            font-size: 45px;
+            font-weight: 600;
+            border-right: 1px solid;
+            margin-right: 25px;
+        }
+        .rightSectionMission{
+            b{
+                color: $globalColorWhite;
+                font-size: 20px;
+            }
+            span{
+                color: $globalColorGrey;
+                font-family: sans-serif;
+                height: 70px;
+                display: block;
+                overflow: hidden;
+                font-size: 17px;
+            }
+        }
+    }
+}
+.headerMission{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 45px;
+    top: 250px;
+}
+.ourMissionWrap {
+    background: $globalColorWhite;
+    padding: 75px 45px;
+    top: 270px;
+    position: relative;
+    z-index: 2;
+    .textMission{
+        >p{
+            color: $globalColorGrey;
+        }
+        ul{
+            li {
+                color: $globalColorGrey;
+                font-family: sans-serif;
+                span{
+                    color: $globalColorRed;
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-right: 15px
+                }
+            }
+        }
+    }
+}
+
+
+// HISTORY CONTENT
+#history{
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        height: 100%;
+        width: 2px;
+        margin: auto;
+        top: 0;
+        z-index: -1;
+    }
+}
+.historyHeader{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 55px;
+}
+.commonWrapRight{
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 25px;
+    position: relative;
+    width: calc(100% - 30px);
+    margin-left: auto;
+    &:before{
+        @extend %extend-before-triangle;
+        left: -8px;
+        transform: rotate(0deg);
+    }
+    &:after{
+        @extend %extend-after-triangle;
+        left: -6px;
+        transform: rotate(0deg);
+    }
+    .dateTop{
+        @include leftRight(auto, -227px, row-reverse);
+        p{
+            font-family: sans-serif;
+            color: $globalColorGrey;
+            margin-bottom: 0;
+        }
+        > span{
+            @include date();
+        }
+    }
+    h4{
+        color: $globalColorRed;
+        margin: 5px 0 25px;
+    }
+    p{
+        font-family: sans-serif;
+        color: $globalColorGrey;
+        font-size: 17px;
+    }
+}
+.commonWrapLeft{
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 25px;
+    position: relative;
+    width: calc(100% - 30px);
+    margin-right: auto;
+    &:before{
+        @extend %extend-before-triangle;
+        right: -8px;
+        transform: rotate(180deg);
+    }
+    &:after{
+        @extend %extend-after-triangle;
+        right: -6px;
+        transform: rotate(180deg);
+    }
+    h4{
+        color: $globalColorRed;
+        margin: 5px 0 25px;
+    }
+    p{
+        font-family: sans-serif;
+        color: $globalColorGrey;
+        font-size: 17px;
+    }
+    .dateTop{
+        @include leftRight(-227px,auto, row);
+        p{
+            font-family: sans-serif;
+            color: $globalColorGrey;
+            margin-bottom: 0;
+        }
+        > span{
+            @include date();
+        }
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:767px){
+    #heartBlock {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .headerMission {
+        font-size: 45px;
+        top: -20px;
+        left: 30px;
+        margin-bottom: 25px;
+    }
+    .ourMissionWrap {
+        top: -20px;
+        left: 30px;
+    }
+}
+@media screen and (max-width:767px){
+    #heartBlock{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        &::after{
+            background-image: none;
+        }
+    }
+    #history:after{
+        display: none;
+    }
+    .ourAproach{
+        margin-bottom: 25px;
+    }
+    .headerMission {
+        font-size: 45px;
+        top: -20px;
+        left: 15px;
+        margin-bottom: 25px;
+    }
+    .ourMissionWrap {
+        top: -20px;
+        left: 15px;
+    }
+    .commonWrapRight{
+        // width: 90%;
+        margin-bottom: 15px; 
+        .dateTop{
+            left: -90px !important;
+        }
+    }
+    .commonWrapLeft{
+        // width: 90%;
+        margin-left:auto; 
+        margin-right:0;
+        margin-bottom: 15px; 
+        .dateTop{
+            left: -90px !important;
+            width: 100%;
+        }
+        &:before{
+            right: auto;
+            left: -8px;
+            transform: rotate(0deg);
+        }
+        &:after{
+            right: auto;
+            left: -6px;
+            transform: rotate(0deg);
+        }
+
+    }
+}
+@media screen and (max-width:576px){
+    .commonWrapRight, .commonWrapLeft{
+        width:calc(100% - 70px)
+    }
+    .headerMission{
+        font-size: 20px;
+    }
+    .missionUl {
+        padding: 35px 25px;
+        li{
+            > span{
+                font-size: 35px;
+            }
+        } 
+    }
+    .ourMissionWrap {
+        top: -20px;
+        left: 7px;
+        padding: 25px 15px;
+        width: 100%;
+    }
+}
+// HISTORY CONTENT

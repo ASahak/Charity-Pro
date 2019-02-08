@@ -1,0 +1,244 @@
+@import './mixins';
+@import './extends';
+
+@import './variables';
+
+.categDonate{
+    background-color: $globalColorWhite;
+    a{
+        display: block;
+        padding: 7px;
+        color: #212121;
+        @include transition(pointer);
+        box-shadow: 0px 2px 6px -2px #ccc;
+        &:hover{
+            transform: translateX(5px);
+            text-decoration: none;
+        }
+    }
+}
+.donateBadge{
+    a{
+        display: block;
+        position: relative;
+        height: 270px;
+        overflow: hidden;
+        .desc_href{
+            position: absolute;
+            transition: .3s;
+            width: 90%;
+            margin: auto;
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            left: 0;
+            right: 0;
+            bottom: 40px;
+            h4{
+                font-size: 15px;
+                margin: 5px auto;
+                height: 20px;
+                overflow: hidden;
+                text-align: center;
+                color: #4B4345;
+                width: 100%;
+                white-space: nowrap; 
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            p::-webkit-scrollbar {
+                width: 2px;
+            }
+            
+            p::-webkit-scrollbar-thumb {
+                background-color: $globalColorWhite;
+                border-radius: 5px;
+            }
+            p::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px $globalColorWhite;
+                border-radius: 5px;
+            }
+            p {
+                &:hover::-webkit-scrollbar-thumb{
+                    border-radius: 5px;
+                    background-color: $globalColorRed !important;
+                }
+                &:hover::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 2px $globalColorRed;
+                    border-radius: 5px;
+                }
+                transition-delay: 1s;
+                transition: 0.3s;
+                color: #4B4345;
+                font-size: 12px;
+                margin: 0;
+                height: 10px;
+                padding: 0 10px;
+                overflow: hidden;
+                text-align: center;
+                opacity: 0;
+            }
+        }
+        img{
+            transition: .4s;
+        }
+        &:hover img{
+            filter: blur(2px);
+            overflow: hidden;
+        }
+        &:hover .desc_href p{
+            height: 60px;
+            opacity: 1;
+            overflow-x: hidden;
+            overflow: auto;
+        }
+      
+    }
+}
+
+
+.commonInfoDonate {
+    width: 60%;
+    max-width: 900px;
+    background-color:$globalColorWhite;
+    padding: 15px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2224;
+    .imgBlockModalDonate{
+        .swiperSliderDoante{
+            max-width: 250px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            .thumb_slide_item{
+                padding: 5px !important
+            }
+        }
+        .descriptionModalDonate {
+            padding: 0 15px;
+            p:last-child{
+                font-size: 14px;
+                padding: 10px;
+                box-shadow: 0px 5px 5px -4px #ccc;
+                max-height: 300px;
+                overflow-x: hidden;
+            }   
+            :last-child::-webkit-scrollbar {
+                width: 2px;
+            }
+            
+            :last-child::-webkit-scrollbar-thumb {
+                background-color: $globalColorRed;
+                border-radius: 5px;
+            }
+            :last-child::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px $globalColorRed;
+                border-radius: 5px;
+            }
+
+        }
+    }
+   
+    .contactInfoDonate{
+        h5{
+            margin: 15px 0
+        }
+        ul{
+            padding-left: 15px;
+            li{
+                display: flex;
+                font-size: 14px;
+                margin-bottom: 5px;
+                color:#717070;
+                span:first-child{
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
+                p{
+                    display: flex;
+                    flex-direction: column;
+                }
+                a{
+                    font-size: 14px;
+                    text-decoration: none;
+                    color:#717070;
+                    @include transition(pointer);
+                    &:Hover{
+                        color: $globalColorRed
+                    }
+                }
+            }
+        }
+        .closeModalDonate{
+            position: absolute;
+            bottom: 20px;
+            right: 50px;
+            width: 120px !important;
+            @include transition(pointer);
+            @extend %extend-button-search;
+        }
+    }
+}
+
+
+@media screen and (max-width:1200px) and (min-width:991px){
+    .donateBadge{
+        a{
+            height: 240px;
+        }
+    }
+}
+@media screen and (max-width:991px) and (min-width:767px){
+    .donateBadge{
+        a{
+            height: 240px;
+        }
+    }
+    .commonInfoDonate {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:767px){
+    .donateBadge{
+        a{
+            height:auto;
+            margin-bottom: 40px;
+            overflow: inherit;
+            .desc_href{
+                bottom: -15px;
+            }
+        }
+    }
+    .commonInfoDonate {
+        width: 90%;
+
+        .imgBlockModalDonate{
+            .swiperSliderDoante{
+                margin: auto;
+            }
+            .descriptionModalDonate {
+                padding: 0 15px;
+                text-align: center;
+                padding-top: 15px;
+                p:last-child {
+                    font-size: 13px;
+                    padding: 10px;
+                    box-shadow: 0px 5px 5px -4px #ccc;
+                    max-height: 200px;
+                    overflow-x: hidden;
+                }
+            }
+        }
+        .contactInfoDonate .closeModalDonate {
+            position: static;
+            bottom: 20px;
+        }
+    }
+}
