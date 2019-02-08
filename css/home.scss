@@ -875,6 +875,12 @@ footer{
     .footerLogo{
         text-align: center;
         margin-bottom: 35px;
+        > span{
+            display: flex;
+            letter-spacing: 1px;
+            font-size: 11px;
+            justify-content: center;
+        }
     }
 }
 @media screen and (max-width:577px){
